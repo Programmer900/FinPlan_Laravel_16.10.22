@@ -1,0 +1,2 @@
+import{v as e,_ as s}from"./main.50abc935.js";const o=e.defineComponent({name:"VCalendar",setup(){return{weekDayMask:e.ref("WW")}}});function t(a,r,c,p,d,k){const n=e.resolveComponent("Calendar");return e.openBlock(),e.createBlock(n,{masks:{weekdays:a.weekDayMask},"max-date":new Date},null,8,["masks","max-date"])}const _=s(o,[["render",t]]);export{_ as default};
+//# sourceMappingURL=index.9cba0934.js.map

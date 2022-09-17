@@ -1,0 +1,2 @@
+import{v as t}from"./main.50abc935.js";const r=()=>{const n=t.getCurrentInstance(),{emitter:o}=n.appContext.config.globalProperties;return o},a={changeAnnotationStrokeColor:"changeAnnotationStrokeColor",changeAnnotationFillColor:"changeAnnotationFillColor",clickAnnotationChangeColor:"clickAnnotationChangeColor",closeAnnotationChangeColor:"closeAnnotationChangeColor",updateCurrentTypeTechAn:"updateCurrentTypeTechAn"};export{a as e,r as u};
+//# sourceMappingURL=useEmitter.cb46a42f.js.map

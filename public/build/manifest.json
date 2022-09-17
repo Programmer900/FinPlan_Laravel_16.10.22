@@ -1,0 +1,1503 @@
+{
+  "resources/js/views/Blog/assets/img/blog/elem_01.png": {
+    "file": "assets/elem_01.b8e2aae5.png",
+    "src": "resources/js/views/Blog/assets/img/blog/elem_01.png"
+  },
+  "resources/js/views/BlogPost/assets/img/blog/elem_02.jpg": {
+    "file": "assets/elem_02.707ac9d0.jpg",
+    "src": "resources/js/views/BlogPost/assets/img/blog/elem_02.jpg"
+  },
+  "resources/js/assets/icons/thumbs-up.svg": {
+    "file": "assets/thumbs-up.57ed6847.svg",
+    "src": "resources/js/assets/icons/thumbs-up.svg"
+  },
+  "resources/js/assets/icons/thumbs-down.svg": {
+    "file": "assets/thumbs-down.ba9a2507.svg",
+    "src": "resources/js/assets/icons/thumbs-down.svg"
+  },
+  "resources/js/components/Blocks/Banner/img/img3_1_.jpg": {
+    "file": "assets/img3_1_.bb200449.jpg",
+    "src": "resources/js/components/Blocks/Banner/img/img3_1_.jpg"
+  },
+  "resources/js/assets/icons/arrowup.svg": {
+    "file": "assets/arrowup.590e130c.svg",
+    "src": "resources/js/assets/icons/arrowup.svg"
+  },
+  "resources/js/assets/icons/arrowdown.svg": {
+    "file": "assets/arrowdown.7238529f.svg",
+    "src": "resources/js/assets/icons/arrowdown.svg"
+  },
+  "resources/js/assets/icons/techAn/close.svg": {
+    "file": "assets/close.e08d737f.svg",
+    "src": "resources/js/assets/icons/techAn/close.svg"
+  },
+  "resources/js/assets/icons/star.svg": {
+    "file": "assets/star.be202051.svg",
+    "src": "resources/js/assets/icons/star.svg"
+  },
+  "resources/js/assets/icons/user.svg": {
+    "file": "assets/user.20861b6f.svg",
+    "src": "resources/js/assets/icons/user.svg"
+  },
+  "resources/js/assets/icons/case.svg": {
+    "file": "assets/case.68c3335c.svg",
+    "src": "resources/js/assets/icons/case.svg"
+  },
+  "resources/js/assets/svg.svg": {
+    "file": "assets/svg.1b5dd46c.svg",
+    "src": "resources/js/assets/svg.svg"
+  },
+  "resources/js/assets/icons/alert-circle.svg": {
+    "file": "assets/alert-circle.d14fe288.svg",
+    "src": "resources/js/assets/icons/alert-circle.svg"
+  },
+  "resources/js/assets/icons/arrow-up.svg": {
+    "file": "assets/arrow-up.fe02bb5b.svg",
+    "src": "resources/js/assets/icons/arrow-up.svg"
+  },
+  "resources/js/assets/icons/arrow-red.svg": {
+    "file": "assets/arrow-red.622ec400.svg",
+    "src": "resources/js/assets/icons/arrow-red.svg"
+  },
+  "resources/js/assets/icons/use-service.svg": {
+    "file": "assets/use-service.9321be7e.svg",
+    "src": "resources/js/assets/icons/use-service.svg"
+  },
+  "resources/js/assets/icons/select-actives-portfel.svg": {
+    "file": "assets/select-actives-portfel.58193218.svg",
+    "src": "resources/js/assets/icons/select-actives-portfel.svg"
+  },
+  "resources/js/assets/img/nikel.png": {
+    "file": "assets/nikel.7e11257c.png",
+    "src": "resources/js/assets/img/nikel.png"
+  },
+  "resources/js/assets/img/we-in-insta.png": {
+    "file": "assets/we-in-insta.501d9ea6.png",
+    "src": "resources/js/assets/img/we-in-insta.png"
+  },
+  "resources/js/assets/icons/calendar.svg": {
+    "file": "assets/calendar.d48c0dbb.svg",
+    "src": "resources/js/assets/icons/calendar.svg"
+  },
+  "resources/js/assets/icons/logo/finplan-logo-circle.svg": {
+    "file": "assets/finplan-logo-circle.2c3c3170.svg",
+    "src": "resources/js/assets/icons/logo/finplan-logo-circle.svg"
+  },
+  "resources/js/assets/icons/logo/finplan-logo-arrow.svg": {
+    "file": "assets/finplan-logo-arrow.7867975e.svg",
+    "src": "resources/js/assets/icons/logo/finplan-logo-arrow.svg"
+  },
+  "resources/js/assets/icons/logo/finplan-logo-title.svg": {
+    "file": "assets/finplan-logo-title.f58ce06e.svg",
+    "src": "resources/js/assets/icons/logo/finplan-logo-title.svg"
+  },
+  "resources/js/assets/icons/logo/finplan-logo-subtitle.svg": {
+    "file": "assets/finplan-logo-subtitle.1f22d16e.svg",
+    "src": "resources/js/assets/icons/logo/finplan-logo-subtitle.svg"
+  },
+  "resources/js/assets/icons/social/vk.svg": {
+    "file": "assets/vk.481dbba3.svg",
+    "src": "resources/js/assets/icons/social/vk.svg"
+  },
+  "resources/js/assets/icons/social/vk--active.svg": {
+    "file": "assets/vk--active.2c6fa4a1.svg",
+    "src": "resources/js/assets/icons/social/vk--active.svg"
+  },
+  "resources/js/assets/icons/social/fb.svg": {
+    "file": "assets/fb.ac4ff391.svg",
+    "src": "resources/js/assets/icons/social/fb.svg"
+  },
+  "resources/js/assets/icons/social/fb--active.svg": {
+    "file": "assets/fb--active.a40be0e6.svg",
+    "src": "resources/js/assets/icons/social/fb--active.svg"
+  },
+  "resources/js/assets/icons/social/insta.svg": {
+    "file": "assets/insta.f2edc917.svg",
+    "src": "resources/js/assets/icons/social/insta.svg"
+  },
+  "resources/js/assets/icons/social/insta--active.svg": {
+    "file": "assets/insta--active.373c63fb.svg",
+    "src": "resources/js/assets/icons/social/insta--active.svg"
+  },
+  "resources/js/assets/icons/social/youtube.svg": {
+    "file": "assets/youtube.d33f58a9.svg",
+    "src": "resources/js/assets/icons/social/youtube.svg"
+  },
+  "resources/js/assets/icons/social/youtube--active.svg": {
+    "file": "assets/youtube--active.9687ecfe.svg",
+    "src": "resources/js/assets/icons/social/youtube--active.svg"
+  },
+  "resources/js/assets/icons/arrow-right.svg": {
+    "file": "assets/arrow-right.e84fc725.svg",
+    "src": "resources/js/assets/icons/arrow-right.svg"
+  },
+  "resources/js/assets/icons/check-svgrepo-com.svg": {
+    "file": "assets/check-svgrepo-com.efea75d0.svg",
+    "src": "resources/js/assets/icons/check-svgrepo-com.svg"
+  },
+  "resources/js/components/Inputs/Dropdown/icons/dropdown.svg": {
+    "file": "assets/dropdown.a475531c.svg",
+    "src": "resources/js/components/Inputs/Dropdown/icons/dropdown.svg"
+  },
+  "resources/js/assets/icons/slider-arrow.svg": {
+    "file": "assets/slider-arrow.6d1719c0.svg",
+    "src": "resources/js/assets/icons/slider-arrow.svg"
+  },
+  "resources/js/assets/icons/portfolio/new-asset.svg": {
+    "file": "assets/new-asset.651ba9ed.svg",
+    "src": "resources/js/assets/icons/portfolio/new-asset.svg"
+  },
+  "resources/js/assets/icons/portfolio/duplicate.svg": {
+    "file": "assets/duplicate.2b54639c.svg",
+    "src": "resources/js/assets/icons/portfolio/duplicate.svg"
+  },
+  "resources/js/assets/icons/portfolio/add-new.svg": {
+    "file": "assets/add-new.b08c370c.svg",
+    "src": "resources/js/assets/icons/portfolio/add-new.svg"
+  },
+  "resources/js/assets/icons/portfolio/load.svg": {
+    "file": "assets/load.8767daa5.svg",
+    "src": "resources/js/assets/icons/portfolio/load.svg"
+  },
+  "resources/js/assets/icons/portfolio/trash.svg": {
+    "file": "assets/trash.f5f9e92c.svg",
+    "src": "resources/js/assets/icons/portfolio/trash.svg"
+  },
+  "resources/js/assets/icons/portfolio/edit.svg": {
+    "file": "assets/edit.d5f367e9.svg",
+    "src": "resources/js/assets/icons/portfolio/edit.svg"
+  },
+  "resources/js/assets/icons/portfolio/question.svg": {
+    "file": "assets/question.47634ae4.svg",
+    "src": "resources/js/assets/icons/portfolio/question.svg"
+  },
+  "resources/js/assets/img/strategy-placeholder.svg": {
+    "file": "assets/strategy-placeholder.7ceea3d1.svg",
+    "src": "resources/js/assets/img/strategy-placeholder.svg"
+  },
+  "resources/js/assets/icons/techAn/plus.svg": {
+    "file": "assets/plus.8af3cc55.svg",
+    "src": "resources/js/assets/icons/techAn/plus.svg"
+  },
+  "resources/js/assets/img/iconService.svg": {
+    "file": "assets/iconService.c5e37235.svg",
+    "src": "resources/js/assets/img/iconService.svg"
+  },
+  "resources/js/assets/img/iconAnalysis.svg": {
+    "file": "assets/iconAnalysis.6c0bcdf7.svg",
+    "src": "resources/js/assets/img/iconAnalysis.svg"
+  },
+  "resources/js/assets/icons/portfolio/about.svg": {
+    "file": "assets/about.6162b394.svg",
+    "src": "resources/js/assets/icons/portfolio/about.svg"
+  },
+  "resources/js/assets/icons/search-2.svg": {
+    "file": "assets/search-2.6285022a.svg",
+    "src": "resources/js/assets/icons/search-2.svg"
+  },
+  "resources/js/assets/icons/search-2--active.svg": {
+    "file": "assets/search-2--active.7f9c5a17.svg",
+    "src": "resources/js/assets/icons/search-2--active.svg"
+  },
+  "resources/js/assets/icons/settings--active.svg": {
+    "file": "assets/settings--active.a0397719.svg",
+    "src": "resources/js/assets/icons/settings--active.svg"
+  },
+  "resources/js/assets/icons/settings.svg": {
+    "file": "assets/settings.7002f2dc.svg",
+    "src": "resources/js/assets/icons/settings.svg"
+  },
+  "resources/js/components/assets/fonts/icomoon/fonts/icomoon.svg": {
+    "file": "assets/icomoon.bf8e486b.svg",
+    "src": "resources/js/components/assets/fonts/icomoon/fonts/icomoon.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.7c3c19f8.js",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/main.ts": {
+    "file": "assets/main.50abc935.js",
+    "src": "resources/js/main.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "_highcharts-vue.min.28fd5e64.js",
+      "resources/js/node_modules/v-calendar/dist/v-calendar.es.js",
+      "resources/js/views/Blog/index.vue",
+      "resources/js/views/BlogPost/index.vue",
+      "resources/js/views/Learning/index.vue",
+      "resources/js/views/Services/CalculatorIis/index.vue",
+      "resources/js/views/Services/CalculatorProfit/index.vue",
+      "resources/js/views/Services/CalendarIpo/index.vue",
+      "resources/js/views/Services/CalendarInvest/index.vue",
+      "resources/js/views/Services/RatingActive/index.vue",
+      "resources/js/views/Document/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Info/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/AboutCompany/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Bonds/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/CompanyIndicators/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Discussion/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Dividends/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Report/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/Balance/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/ProfitLoss/index.vue",
+      "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/CashFlow/index.vue",
+      "resources/js/views/Lists/index.vue",
+      "resources/js/views/Lists/modules/Pages/All/index.vue",
+      "resources/js/views/Lists/modules/Pages/About/index.vue",
+      "resources/js/views/SecurityList/index.vue",
+      "resources/js/views/Index/index.vue",
+      "resources/js/views/TechnicalAnalysis/index.vue",
+      "resources/js/views/Portfolio/index.vue",
+      "resources/js/views/Radar/index.vue"
+    ],
+    "css": [
+      "assets/main.72fab5a9.css"
+    ],
+    "assets": [
+      "assets/svg.1b5dd46c.svg",
+      "assets/star.be202051.svg",
+      "assets/user.20861b6f.svg",
+      "assets/case.68c3335c.svg",
+      "assets/arrowup.590e130c.svg",
+      "assets/arrowdown.7238529f.svg",
+      "assets/finplan-logo-circle.2c3c3170.svg",
+      "assets/finplan-logo-arrow.7867975e.svg",
+      "assets/finplan-logo-title.f58ce06e.svg",
+      "assets/finplan-logo-subtitle.1f22d16e.svg",
+      "assets/vk.481dbba3.svg",
+      "assets/vk--active.2c6fa4a1.svg",
+      "assets/fb.ac4ff391.svg",
+      "assets/fb--active.a40be0e6.svg",
+      "assets/insta.f2edc917.svg",
+      "assets/insta--active.373c63fb.svg",
+      "assets/youtube.d33f58a9.svg",
+      "assets/youtube--active.9687ecfe.svg",
+      "assets/close.e08d737f.svg",
+      "assets/icomoon.bf8e486b.svg"
+    ]
+  },
+  "_highcharts-vue.min.28fd5e64.js": {
+    "file": "assets/highcharts-vue.min.28fd5e64.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "resources/js/node_modules/v-calendar/dist/v-calendar.es.js": {
+    "file": "assets/v-calendar.es.2e619699.js",
+    "src": "resources/js/node_modules/v-calendar/dist/v-calendar.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "resources/js/views/Blog/index.vue": {
+    "file": "assets/index.a2ed6d8a.js",
+    "src": "resources/js/views/Blog/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.ac750bba.css"
+    ],
+    "assets": [
+      "assets/elem_01.b8e2aae5.png"
+    ]
+  },
+  "resources/js/views/BlogPost/index.vue": {
+    "file": "assets/index.0fdf3ef8.js",
+    "src": "resources/js/views/BlogPost/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_thumbs-down.40cfe73e.js"
+    ],
+    "css": [
+      "assets/index.92a2ef5b.css"
+    ],
+    "assets": [
+      "assets/elem_01.b8e2aae5.png",
+      "assets/elem_02.707ac9d0.jpg"
+    ]
+  },
+  "_thumbs-down.40cfe73e.js": {
+    "file": "assets/thumbs-down.40cfe73e.js",
+    "assets": [
+      "assets/thumbs-up.57ed6847.svg",
+      "assets/thumbs-down.ba9a2507.svg"
+    ]
+  },
+  "resources/js/views/Learning/index.vue": {
+    "file": "assets/index.f241763b.js",
+    "src": "resources/js/views/Learning/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.d4633cba.css"
+    ]
+  },
+  "resources/js/views/Services/CalculatorIis/index.vue": {
+    "file": "assets/index.c3748c9f.js",
+    "src": "resources/js/views/Services/CalculatorIis/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.e6ef894a.js",
+      "_index.5d654b86.js"
+    ],
+    "css": [
+      "assets/index.431ebd6d.css"
+    ]
+  },
+  "_index.e6ef894a.js": {
+    "file": "assets/index.e6ef894a.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.a1e3f4df.css"
+    ],
+    "assets": [
+      "assets/img3_1_.bb200449.jpg"
+    ]
+  },
+  "_index.5d654b86.js": {
+    "file": "assets/index.5d654b86.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "dynamicImports": [
+      "resources/js/views/SecurityList/modules/Calendar/modules/VCalendar/index.vue"
+    ],
+    "css": [
+      "assets/index.2b414627.css"
+    ],
+    "assets": [
+      "assets/nikel.7e11257c.png",
+      "assets/we-in-insta.501d9ea6.png"
+    ]
+  },
+  "resources/js/views/Services/CalculatorProfit/index.vue": {
+    "file": "assets/index.72b806a5.js",
+    "src": "resources/js/views/Services/CalculatorProfit/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.e6ef894a.js",
+      "_index.5d654b86.js"
+    ],
+    "css": [
+      "assets/index.b368cd34.css"
+    ]
+  },
+  "resources/js/views/Services/CalendarIpo/index.vue": {
+    "file": "assets/index.13659857.js",
+    "src": "resources/js/views/Services/CalendarIpo/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.5d654b86.js",
+      "_index.858bfd21.js",
+      "_index.96171117.js",
+      "_Table.f4f1535f.js",
+      "_index.ea6da743.js",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.6f46859e.css"
+    ]
+  },
+  "_index.858bfd21.js": {
+    "file": "assets/index.858bfd21.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.9101a6b7.css"
+    ]
+  },
+  "_index.96171117.js": {
+    "file": "assets/index.96171117.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.e42e0179.css"
+    ]
+  },
+  "_Table.f4f1535f.js": {
+    "file": "assets/Table.f4f1535f.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/Table.bc659aba.css"
+    ]
+  },
+  "_index.ea6da743.js": {
+    "file": "assets/index.ea6da743.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "_useVModel.13ad703e.js": {
+    "file": "assets/useVModel.13ad703e.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "resources/js/views/Services/CalendarInvest/index.vue": {
+    "file": "assets/index.038c6b5f.js",
+    "src": "resources/js/views/Services/CalendarInvest/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.ea6da743.js",
+      "_index.5d654b86.js",
+      "_Select.2e94240e.js",
+      "_Table.f4f1535f.js",
+      "_index.858bfd21.js",
+      "_index.96171117.js",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.8f63d591.css"
+    ]
+  },
+  "_Select.2e94240e.js": {
+    "file": "assets/Select.2e94240e.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/Select.2861e1d0.css"
+    ]
+  },
+  "resources/js/views/Services/RatingActive/index.vue": {
+    "file": "assets/index.24353da7.js",
+    "src": "resources/js/views/Services/RatingActive/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_Select.2e94240e.js",
+      "_Table.f4f1535f.js",
+      "_index.5d654b86.js"
+    ],
+    "css": [
+      "assets/index.1f60077d.css"
+    ]
+  },
+  "resources/js/views/Document/index.vue": {
+    "file": "assets/index.f04a6abd.js",
+    "src": "resources/js/views/Document/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_arrow-red.96a4c42e.js",
+      "_highcharts.e06d80e4.js",
+      "_stock.2a7d0cca.js",
+      "_formattingNum.service.d2fa6ad4.js",
+      "_popper.esm.d8371509.js",
+      "_alert-circle.4df9b043.js"
+    ],
+    "css": [
+      "assets/index.b9d2020e.css"
+    ]
+  },
+  "_arrow-red.96a4c42e.js": {
+    "file": "assets/arrow-red.96a4c42e.js",
+    "assets": [
+      "assets/arrow-up.fe02bb5b.svg",
+      "assets/arrow-red.622ec400.svg"
+    ]
+  },
+  "_highcharts.e06d80e4.js": {
+    "file": "assets/highcharts.e06d80e4.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "_stock.2a7d0cca.js": {
+    "file": "assets/stock.2a7d0cca.js"
+  },
+  "_formattingNum.service.d2fa6ad4.js": {
+    "file": "assets/formattingNum.service.d2fa6ad4.js"
+  },
+  "_popper.esm.d8371509.js": {
+    "file": "assets/popper.esm.d8371509.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "_alert-circle.4df9b043.js": {
+    "file": "assets/alert-circle.4df9b043.js",
+    "assets": [
+      "assets/alert-circle.d14fe288.svg"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Info/index.vue": {
+    "file": "assets/index.246ba7de.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Info/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_formattingNum.service.d2fa6ad4.js"
+    ],
+    "css": [
+      "assets/index.0517034c.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/AboutCompany/index.vue": {
+    "file": "assets/index.c8cf18fb.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/AboutCompany/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.65588bbd.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Bonds/index.vue": {
+    "file": "assets/index.8f68585a.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Bonds/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.9df1e83a.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/CompanyIndicators/index.vue": {
+    "file": "assets/index.6ff9ba9f.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/CompanyIndicators/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.ef1b22c0.js",
+      "_index.fcf4c38d.js",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_useVModel.13ad703e.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.7b694265.css"
+    ]
+  },
+  "_index.ef1b22c0.js": {
+    "file": "assets/index.ef1b22c0.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.bef517f7.css"
+    ]
+  },
+  "_index.fcf4c38d.js": {
+    "file": "assets/index.fcf4c38d.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.946c99a5.css"
+    ]
+  },
+  "_useEmitter.cb46a42f.js": {
+    "file": "assets/useEmitter.cb46a42f.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "_check-svgrepo-com.3d930d88.js": {
+    "file": "assets/check-svgrepo-com.3d930d88.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/check-svgrepo-com.07cf8ff0.css"
+    ],
+    "assets": [
+      "assets/check-svgrepo-com.efea75d0.svg"
+    ]
+  },
+  "_arrow-right.c9e4ddf7.js": {
+    "file": "assets/arrow-right.c9e4ddf7.js",
+    "assets": [
+      "assets/arrow-right.e84fc725.svg"
+    ]
+  },
+  "_index.de0fdd57.js": {
+    "file": "assets/index.de0fdd57.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.c397413a.css"
+    ],
+    "assets": [
+      "assets/dropdown.a475531c.svg"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Discussion/index.vue": {
+    "file": "assets/index.2870e916.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Discussion/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_thumbs-down.40cfe73e.js"
+    ],
+    "css": [
+      "assets/index.15597ea6.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Dividends/index.vue": {
+    "file": "assets/index.3be154b3.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Dividends/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.fb00f041.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/index.vue": {
+    "file": "assets/index.f95ad3c5.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.fcf4c38d.js",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_useVModel.13ad703e.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.7d14b706.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/Balance/index.vue": {
+    "file": "assets/index.6ab61c0a.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/Balance/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.18d4bb87.js",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_useVModel.13ad703e.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.a22026f9.css"
+    ]
+  },
+  "_index.18d4bb87.js": {
+    "file": "assets/index.18d4bb87.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.d2c22447.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/ProfitLoss/index.vue": {
+    "file": "assets/index.ba4dea2a.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/ProfitLoss/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.18d4bb87.js",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_useVModel.13ad703e.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.26f16577.css"
+    ]
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/CashFlow/index.vue": {
+    "file": "assets/index.8f0a68f7.js",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/CashFlow/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.18d4bb87.js",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_useVModel.13ad703e.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.92815991.css"
+    ]
+  },
+  "resources/js/views/Lists/index.vue": {
+    "file": "assets/index.49867296.js",
+    "src": "resources/js/views/Lists/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "resources/js/views/Lists/modules/Pages/All/index.vue": {
+    "file": "assets/index.0f0038ee.js",
+    "src": "resources/js/views/Lists/modules/Pages/All/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.a00d62cf.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.ca99a427.js",
+      "_highcharts.e06d80e4.js",
+      "_stock.2a7d0cca.js",
+      "_arrow-red.96a4c42e.js",
+      "_useSSR.5ef275e1.js"
+    ],
+    "css": [
+      "assets/index.01f86103.css"
+    ]
+  },
+  "_index.a00d62cf.js": {
+    "file": "assets/index.a00d62cf.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_arrow-red.96a4c42e.js",
+      "_useSSR.5ef275e1.js"
+    ],
+    "css": [
+      "assets/index.ba4566a5.css"
+    ]
+  },
+  "_useSSR.5ef275e1.js": {
+    "file": "assets/useSSR.5ef275e1.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "_index.ca99a427.js": {
+    "file": "assets/index.ca99a427.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.5743571f.css"
+    ]
+  },
+  "resources/js/views/Lists/modules/Pages/About/index.vue": {
+    "file": "assets/index.1ba83382.js",
+    "src": "resources/js/views/Lists/modules/Pages/About/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.a00d62cf.js",
+      "_index.ef1b22c0.js",
+      "_index.fcf4c38d.js",
+      "_arrow-red.96a4c42e.js",
+      "_useSSR.5ef275e1.js",
+      "_alert-circle.4df9b043.js",
+      "_useEmitter.cb46a42f.js",
+      "_check-svgrepo-com.3d930d88.js",
+      "_arrow-right.c9e4ddf7.js",
+      "_index.de0fdd57.js",
+      "_useVModel.13ad703e.js",
+      "_popper.esm.d8371509.js"
+    ],
+    "css": [
+      "assets/index.e48c5f1b.css"
+    ]
+  },
+  "resources/js/views/SecurityList/index.vue": {
+    "file": "assets/index.025daa0b.js",
+    "src": "resources/js/views/SecurityList/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_swiper-slide.4a158d37.js",
+      "_alert-circle.4df9b043.js",
+      "_useSSR.5ef275e1.js",
+      "_index.5d654b86.js"
+    ],
+    "css": [
+      "assets/index.df9170d1.css"
+    ]
+  },
+  "_swiper-slide.4a158d37.js": {
+    "file": "assets/swiper-slide.4a158d37.js",
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "resources/js/views/Index/index.vue": {
+    "file": "assets/index.cdb46e3a.js",
+    "src": "resources/js/views/Index/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_stock.2a7d0cca.js",
+      "_highcharts.e06d80e4.js"
+    ],
+    "css": [
+      "assets/index.4e9d3bb0.css"
+    ]
+  },
+  "resources/js/views/TechnicalAnalysis/index.vue": {
+    "file": "assets/index.200599e5.js",
+    "src": "resources/js/views/TechnicalAnalysis/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.de0fdd57.js",
+      "_highcharts.e06d80e4.js",
+      "_stock.2a7d0cca.js",
+      "_useEmitter.cb46a42f.js",
+      "_index.ea6da743.js",
+      "_index.358e587e.js",
+      "_useSSR.5ef275e1.js",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.5d686b21.css"
+    ],
+    "assets": [
+      "assets/iconService.c5e37235.svg",
+      "assets/iconAnalysis.6c0bcdf7.svg",
+      "assets/plus.8af3cc55.svg"
+    ]
+  },
+  "_index.358e587e.js": {
+    "file": "assets/index.358e587e.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_index.ea6da743.js"
+    ],
+    "css": [
+      "assets/index.c19e4737.css"
+    ]
+  },
+  "resources/js/views/Portfolio/index.vue": {
+    "file": "assets/index.4db1ed07.js",
+    "src": "resources/js/views/Portfolio/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.7b89be9e.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_index.ea6da743.js"
+    ],
+    "dynamicImports": [
+      "resources/js/views/Portfolio/modules/TabPanels/Portfolio/index.vue",
+      "resources/js/views/Portfolio/modules/TabPanels/BekTest/index.vue",
+      "resources/js/views/Portfolio/modules/TabPanels/History/index.vue",
+      "resources/js/views/Portfolio/modules/TabPanels/Income/index.vue",
+      "resources/js/views/Portfolio/modules/TabPanels/Analysis/index.vue"
+    ]
+  },
+  "_index.7b89be9e.js": {
+    "file": "assets/index.7b89be9e.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_index.ea6da743.js"
+    ],
+    "css": [
+      "assets/index.686fa8e0.css"
+    ],
+    "assets": [
+      "assets/use-service.9321be7e.svg",
+      "assets/select-actives-portfel.58193218.svg",
+      "assets/slider-arrow.6d1719c0.svg"
+    ]
+  },
+  "resources/js/views/Radar/index.vue": {
+    "file": "assets/index.2a9eb385.js",
+    "src": "resources/js/views/Radar/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.7b89be9e.js",
+      "_index.ea6da743.js",
+      "_index.61fdeeee.js",
+      "_index.b790783c.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_index.358e587e.js",
+      "_useVModel.13ad703e.js",
+      "_index.5defaede.js",
+      "_index.de0fdd57.js",
+      "_highcharts.e06d80e4.js"
+    ],
+    "dynamicImports": [
+      "resources/js/views/Radar/modules/TabPanels/Bonds/index.vue",
+      "resources/js/views/Radar/modules/TabPanels/StockRu/index.vue",
+      "resources/js/views/Radar/modules/TabPanels/StockUsa/index.vue",
+      "resources/js/views/Radar/modules/TabPanels/ETF/index.vue",
+      "resources/js/views/Radar/modules/TabPanels/MarketMap/index.vue"
+    ],
+    "css": [
+      "assets/index.6ab933d0.css"
+    ]
+  },
+  "_index.61fdeeee.js": {
+    "file": "assets/index.61fdeeee.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_index.358e587e.js",
+      "_useVModel.13ad703e.js",
+      "_index.b790783c.js",
+      "_index.ea6da743.js",
+      "_index.5defaede.js",
+      "_index.de0fdd57.js",
+      "_index.ca99a427.js"
+    ],
+    "css": [
+      "assets/index.9fa4f6ab.css"
+    ],
+    "assets": [
+      "assets/search-2.6285022a.svg",
+      "assets/search-2--active.7f9c5a17.svg",
+      "assets/settings.7002f2dc.svg",
+      "assets/settings--active.a0397719.svg"
+    ]
+  },
+  "_index.b790783c.js": {
+    "file": "assets/index.b790783c.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_index.ea6da743.js",
+      "_highcharts.e06d80e4.js",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.7bb12fc6.css"
+    ]
+  },
+  "_index.5defaede.js": {
+    "file": "assets/index.5defaede.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.5a225119.css"
+    ]
+  },
+  "resources/js/views/SecurityList/modules/Calendar/modules/VCalendar/index.vue": {
+    "file": "assets/index.9cba0934.js",
+    "src": "resources/js/views/SecurityList/modules/Calendar/modules/VCalendar/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts"
+    ]
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/Portfolio/index.vue": {
+    "file": "assets/index.eba63355.js",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/Portfolio/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.b790783c.js",
+      "_index.5ad73987.js",
+      "_index.de0fdd57.js",
+      "_index.61fdeeee.js",
+      "_index.ea6da743.js",
+      "_highcharts.e06d80e4.js",
+      "_useVModel.13ad703e.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js",
+      "_index.ca99a427.js"
+    ],
+    "css": [
+      "assets/index.98e2bd7d.css"
+    ],
+    "assets": [
+      "assets/about.6162b394.svg"
+    ]
+  },
+  "_index.5ad73987.js": {
+    "file": "assets/index.5ad73987.js",
+    "imports": [
+      "resources/js/main.ts"
+    ],
+    "css": [
+      "assets/index.00c97f68.css"
+    ],
+    "assets": [
+      "assets/new-asset.651ba9ed.svg",
+      "assets/duplicate.2b54639c.svg",
+      "assets/add-new.b08c370c.svg",
+      "assets/load.8767daa5.svg"
+    ]
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/BekTest/index.vue": {
+    "file": "assets/index.6e237bb7.js",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/BekTest/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.b790783c.js",
+      "_index.5ad73987.js",
+      "_index.de0fdd57.js",
+      "_index.61fdeeee.js",
+      "_index.ea6da743.js",
+      "_highcharts.e06d80e4.js",
+      "_useVModel.13ad703e.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js",
+      "_index.ca99a427.js"
+    ],
+    "css": [
+      "assets/index.9c864ad1.css"
+    ]
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/History/index.vue": {
+    "file": "assets/index.197e29fd.js",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/History/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.b790783c.js",
+      "_index.5ad73987.js",
+      "_index.de0fdd57.js",
+      "_index.0aeafcba.js",
+      "_index.ea6da743.js",
+      "_highcharts.e06d80e4.js",
+      "_useVModel.13ad703e.js",
+      "_index.ca99a427.js",
+      "_index.5defaede.js",
+      "_index.938b8e56.js"
+    ],
+    "css": [
+      "assets/index.7a8bb45c.css"
+    ]
+  },
+  "_index.0aeafcba.js": {
+    "file": "assets/index.0aeafcba.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_index.ca99a427.js",
+      "_index.5defaede.js",
+      "_useVModel.13ad703e.js",
+      "_index.938b8e56.js"
+    ],
+    "css": [
+      "assets/index.080d819b.css"
+    ],
+    "assets": [
+      "assets/trash.f5f9e92c.svg",
+      "assets/edit.d5f367e9.svg"
+    ]
+  },
+  "_index.938b8e56.js": {
+    "file": "assets/index.938b8e56.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.d38d6d2b.css"
+    ]
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/Income/index.vue": {
+    "file": "assets/index.f423d9c7.js",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/Income/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.b790783c.js",
+      "_index.5ad73987.js",
+      "_index.de0fdd57.js",
+      "_index.0aeafcba.js",
+      "_index.ca99a427.js",
+      "_index.5defaede.js",
+      "_useVModel.13ad703e.js",
+      "_index.938b8e56.js",
+      "_index.ea6da743.js",
+      "_highcharts.e06d80e4.js"
+    ],
+    "css": [
+      "assets/index.c8d0d82c.css"
+    ]
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/Analysis/index.vue": {
+    "file": "assets/index.4ff40517.js",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/Analysis/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_index.b790783c.js",
+      "_index.5ad73987.js",
+      "_index.de0fdd57.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ea6da743.js",
+      "_highcharts.e06d80e4.js",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.6ef788d4.css"
+    ],
+    "assets": [
+      "assets/question.47634ae4.svg"
+    ]
+  },
+  "resources/js/views/Radar/modules/TabPanels/Bonds/index.vue": {
+    "file": "assets/index.c6931da7.js",
+    "src": "resources/js/views/Radar/modules/TabPanels/Bonds/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_calendar.639c593b.js",
+      "_index.de0fdd57.js",
+      "_index.b790783c.js",
+      "_index.858bfd21.js",
+      "_index.938b8e56.js",
+      "_index.61fdeeee.js",
+      "_index.ea6da743.js",
+      "_index.96171117.js",
+      "_useVModel.13ad703e.js",
+      "_index.7b89be9e.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_highcharts.e06d80e4.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js"
+    ],
+    "css": [
+      "assets/index.d977e69c.css"
+    ]
+  },
+  "_calendar.639c593b.js": {
+    "file": "assets/calendar.639c593b.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_useVModel.13ad703e.js",
+      "_index.7b89be9e.js",
+      "_index.ea6da743.js",
+      "_swiper-slide.4a158d37.js"
+    ],
+    "css": [
+      "assets/calendar.dfbe0664.css"
+    ],
+    "assets": [
+      "assets/strategy-placeholder.7ceea3d1.svg",
+      "assets/calendar.d48c0dbb.svg",
+      "assets/slider-arrow.6d1719c0.svg"
+    ]
+  },
+  "resources/js/views/Radar/modules/TabPanels/StockRu/index.vue": {
+    "file": "assets/index.93cee016.js",
+    "src": "resources/js/views/Radar/modules/TabPanels/StockRu/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_calendar.639c593b.js",
+      "_index.de0fdd57.js",
+      "_index.b790783c.js",
+      "_index.858bfd21.js",
+      "_index.938b8e56.js",
+      "_index.61fdeeee.js",
+      "_index.bbfd83dd.js",
+      "_index.ea6da743.js",
+      "_useVModel.13ad703e.js",
+      "_index.7b89be9e.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_highcharts.e06d80e4.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js"
+    ],
+    "css": [
+      "assets/index.8543099f.css"
+    ]
+  },
+  "_index.bbfd83dd.js": {
+    "file": "assets/index.bbfd83dd.js",
+    "imports": [
+      "resources/js/main.ts",
+      "_useVModel.13ad703e.js"
+    ],
+    "css": [
+      "assets/index.b6a9654b.css"
+    ]
+  },
+  "resources/js/views/Radar/modules/TabPanels/StockUsa/index.vue": {
+    "file": "assets/index.a16b50a8.js",
+    "src": "resources/js/views/Radar/modules/TabPanels/StockUsa/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_calendar.639c593b.js",
+      "_index.de0fdd57.js",
+      "_index.b790783c.js",
+      "_index.858bfd21.js",
+      "_index.938b8e56.js",
+      "_index.61fdeeee.js",
+      "_index.bbfd83dd.js",
+      "_index.ea6da743.js",
+      "_useVModel.13ad703e.js",
+      "_index.7b89be9e.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_highcharts.e06d80e4.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js"
+    ],
+    "css": [
+      "assets/index.5e672954.css"
+    ]
+  },
+  "resources/js/views/Radar/modules/TabPanels/ETF/index.vue": {
+    "file": "assets/index.ac176b18.js",
+    "src": "resources/js/views/Radar/modules/TabPanels/ETF/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_calendar.639c593b.js",
+      "_index.de0fdd57.js",
+      "_index.b790783c.js",
+      "_index.858bfd21.js",
+      "_index.938b8e56.js",
+      "_index.61fdeeee.js",
+      "_index.bbfd83dd.js",
+      "_index.ea6da743.js",
+      "_useVModel.13ad703e.js",
+      "_index.7b89be9e.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_highcharts.e06d80e4.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js"
+    ],
+    "css": [
+      "assets/index.cd6701a5.css"
+    ]
+  },
+  "resources/js/views/Radar/modules/TabPanels/MarketMap/index.vue": {
+    "file": "assets/index.396880b4.js",
+    "src": "resources/js/views/Radar/modules/TabPanels/MarketMap/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/main.ts",
+      "_calendar.639c593b.js",
+      "_index.de0fdd57.js",
+      "_index.b790783c.js",
+      "_index.858bfd21.js",
+      "_index.938b8e56.js",
+      "_index.61fdeeee.js",
+      "_index.bbfd83dd.js",
+      "_index.ea6da743.js",
+      "_useVModel.13ad703e.js",
+      "_index.7b89be9e.js",
+      "_swiper-slide.4a158d37.js",
+      "_index.ca99a427.js",
+      "_highcharts.e06d80e4.js",
+      "_index.358e587e.js",
+      "_index.5defaede.js"
+    ],
+    "css": [
+      "assets/index.7e2bbd35.css"
+    ]
+  },
+  "resources/js/views/Services/CalculatorProfit/index.css": {
+    "file": "assets/index.b368cd34.css",
+    "src": "resources/js/views/Services/CalculatorProfit/index.css"
+  },
+  "resources/js/views/Services/CalendarIpo/index.css": {
+    "file": "assets/index.6f46859e.css",
+    "src": "resources/js/views/Services/CalendarIpo/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/AboutCompany/index.css": {
+    "file": "assets/index.65588bbd.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/AboutCompany/index.css"
+  },
+  "resources/js/views/Learning/index.css": {
+    "file": "assets/index.d4633cba.css",
+    "src": "resources/js/views/Learning/index.css"
+  },
+  "index.css": {
+    "file": "assets/index.00c97f68.css",
+    "src": "index.css"
+  },
+  "resources/js/views/Services/CalendarInvest/index.css": {
+    "file": "assets/index.8f63d591.css",
+    "src": "resources/js/views/Services/CalendarInvest/index.css"
+  },
+  "resources/js/views/Services/RatingActive/index.css": {
+    "file": "assets/index.1f60077d.css",
+    "src": "resources/js/views/Services/RatingActive/index.css"
+  },
+  "Table.css": {
+    "file": "assets/Table.bc659aba.css",
+    "src": "Table.css"
+  },
+  "resources/js/views/Document/index.css": {
+    "file": "assets/index.b9d2020e.css",
+    "src": "resources/js/views/Document/index.css"
+  },
+  "Select.css": {
+    "file": "assets/Select.2861e1d0.css",
+    "src": "Select.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Info/index.css": {
+    "file": "assets/index.0517034c.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Info/index.css"
+  },
+  "resources/js/views/Services/CalculatorIis/index.css": {
+    "file": "assets/index.431ebd6d.css",
+    "src": "resources/js/views/Services/CalculatorIis/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Bonds/index.css": {
+    "file": "assets/index.9df1e83a.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Bonds/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/CompanyIndicators/index.css": {
+    "file": "assets/index.7b694265.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/CompanyIndicators/index.css"
+  },
+  "resources/js/views/Blog/index.css": {
+    "file": "assets/index.ac750bba.css",
+    "src": "resources/js/views/Blog/index.css"
+  },
+  "resources/js/views/Radar/index.css": {
+    "file": "assets/index.6ab933d0.css",
+    "src": "resources/js/views/Radar/index.css"
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/History/index.css": {
+    "file": "assets/index.7a8bb45c.css",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/History/index.css"
+  },
+  "check-svgrepo-com.css": {
+    "file": "assets/check-svgrepo-com.07cf8ff0.css",
+    "src": "check-svgrepo-com.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Discussion/index.css": {
+    "file": "assets/index.15597ea6.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Discussion/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Dividends/index.css": {
+    "file": "assets/index.fb00f041.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Dividends/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/index.css": {
+    "file": "assets/index.7d14b706.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/Balance/index.css": {
+    "file": "assets/index.a22026f9.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/Balance/index.css"
+  },
+  "resources/js/views/Lists/modules/Pages/All/index.css": {
+    "file": "assets/index.01f86103.css",
+    "src": "resources/js/views/Lists/modules/Pages/All/index.css"
+  },
+  "resources/js/views/Lists/modules/Pages/About/index.css": {
+    "file": "assets/index.e48c5f1b.css",
+    "src": "resources/js/views/Lists/modules/Pages/About/index.css"
+  },
+  "resources/js/views/SecurityList/index.css": {
+    "file": "assets/index.df9170d1.css",
+    "src": "resources/js/views/SecurityList/index.css"
+  },
+  "resources/js/views/TechnicalAnalysis/index.css": {
+    "file": "assets/index.5d686b21.css",
+    "src": "resources/js/views/TechnicalAnalysis/index.css"
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/Portfolio/index.css": {
+    "file": "assets/index.98e2bd7d.css",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/Portfolio/index.css"
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/BekTest/index.css": {
+    "file": "assets/index.9c864ad1.css",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/BekTest/index.css"
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/Income/index.css": {
+    "file": "assets/index.c8d0d82c.css",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/Income/index.css"
+  },
+  "resources/js/views/Portfolio/modules/TabPanels/Analysis/index.css": {
+    "file": "assets/index.6ef788d4.css",
+    "src": "resources/js/views/Portfolio/modules/TabPanels/Analysis/index.css"
+  },
+  "resources/js/views/Radar/modules/TabPanels/Bonds/index.css": {
+    "file": "assets/index.d977e69c.css",
+    "src": "resources/js/views/Radar/modules/TabPanels/Bonds/index.css"
+  },
+  "calendar.css": {
+    "file": "assets/calendar.dfbe0664.css",
+    "src": "calendar.css"
+  },
+  "resources/js/views/Radar/modules/TabPanels/StockRu/index.css": {
+    "file": "assets/index.8543099f.css",
+    "src": "resources/js/views/Radar/modules/TabPanels/StockRu/index.css"
+  },
+  "resources/js/views/Radar/modules/TabPanels/StockUsa/index.css": {
+    "file": "assets/index.5e672954.css",
+    "src": "resources/js/views/Radar/modules/TabPanels/StockUsa/index.css"
+  },
+  "resources/js/views/Radar/modules/TabPanels/ETF/index.css": {
+    "file": "assets/index.cd6701a5.css",
+    "src": "resources/js/views/Radar/modules/TabPanels/ETF/index.css"
+  },
+  "resources/js/views/Radar/modules/TabPanels/MarketMap/index.css": {
+    "file": "assets/index.7e2bbd35.css",
+    "src": "resources/js/views/Radar/modules/TabPanels/MarketMap/index.css"
+  },
+  "resources/js/views/Index/index.css": {
+    "file": "assets/index.4e9d3bb0.css",
+    "src": "resources/js/views/Index/index.css"
+  },
+  "resources/js/views/BlogPost/index.css": {
+    "file": "assets/index.92a2ef5b.css",
+    "src": "resources/js/views/BlogPost/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/ProfitLoss/index.css": {
+    "file": "assets/index.26f16577.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/ProfitLoss/index.css"
+  },
+  "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/CashFlow/index.css": {
+    "file": "assets/index.92815991.css",
+    "src": "resources/js/views/Document/modules/Views/modules/Pages/Report/modules/CashFlow/index.css"
+  },
+  "resources/js/main.css": {
+    "file": "assets/main.72fab5a9.css",
+    "src": "resources/js/main.css"
+  }
+}

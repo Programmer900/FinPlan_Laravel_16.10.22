@@ -2,6 +2,19 @@
  FinPlan version 1.0
 </h2>
 
+### Frontend: 
+
+ - npm i or yarn #install dependencies at the root of the project, to work with Vite
+ - cd _app/server and npm i or yarn #install dependencies to work with Node JS
+ - yarn run start # SSR mode
+ - yarn run dev # Dev mode
+
+### Backend:
+
+ - php artisan server #run laravel system
+ 
+----------------------------------------
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

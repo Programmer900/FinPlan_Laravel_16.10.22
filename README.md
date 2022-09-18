@@ -5,16 +5,16 @@
 ### Frontend: 
 
  - *path*: **"/"** 
-     *command*: ##### npm i or yarn
+     *command*: npm i or yarn
          // install dependencies at the root of the project, to work with Vite
  - *path*: **"_app/server"** 
-     *command*: ##### cd _app/server and npm i or yarn 
+     *command*: cd _app/server and npm i or yarn 
          // install dependencies to work with Node JS
  - *path*: **"/"**
-     *command*: ##### yarn run start 
+     *command*: yarn run start 
          // SSR mode
  - *path*: **"/"**
-     *command*: ##### yarn run dev 
+     *command*: yarn run dev 
         // Dev mode
 
 ### Backend:

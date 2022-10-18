@@ -127,6 +127,30 @@ export default {
       typeIndicator: '',
       annotation: 'Возможность открытия короткой позиции по данному активу, т.е. возможность заработка с понижения котировок бумаги.'
     },
+    {
+      name: 'Операции с кредитным плечом:',
+      path: 'RADAR_DATA.PROPS.PROP_KREDIT',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'Возможность покупки бумаг с использованием заемных средств.'
+    },
+    {
+      name: 'Бумага состоит в индексах:',
+      path: 'RADAR_DATA.PROPS.PROP_MMVB',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'Индексы позволяют отслеживать состояние и динамику определенных групп активов, объединенных общим признаком. В основные индексы входят наиболее крупные и ликвидные активы.'
+    },
+    {
+      name: 'Цена акции',
+      path: 'RADAR_DATA.PROPS.LASTPRICE',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'Цена 1 акции компании. Минимальное количество бумаг для покупки в графе \'Количество акций в лоте\''
+    },
     // {
     //   name: 'Объем выпукска:',
     // path: 'PROP_SHORT',
@@ -183,7 +207,7 @@ export default {
     {
       name: 'Методика расчета дивидендов:',
       path: 'RADAR_DATA.PROPS.PROP_DIVIDEND_DESCRIPTION',
-      typeValue: '',
+      typeValue: 'string',
       symbol: '',
       typeIndicator: '',
       annotation: 'Методика расчета дивидендов публикуется во внутренней документации компании - дивидендная политика и устав организации.'
@@ -236,6 +260,7 @@ export default {
       typeIndicator: '',
       annotation: 'Это статистический коэффициент, который характеризует движение отдельной акции относительно всего рынка в целом. Если бета > 1, то акция в статистике обгоняет рынок, от 0 до 1 - движется в одну сторону с рынком, но менее волатильна, менее 0 - акция движется противоположно рынку. Подробнее в статье. Бета расчитана за 5 лет.'
     },
+
     {
       name: 'Рейтинг радара:',
       path: 'RADAR_DATA.PROPS.PRC_OF_USERS',
@@ -277,6 +302,23 @@ export default {
       symbol: 'шт.',
       typeIndicator: '',
       annotation: 'EN[]'
+    },
+
+    {
+      name: 'Operation Short:',
+      path: 'RADAR_DATA.PROPS.PROP_SHORT',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: '[EN]Возможность открытия короткой позиции по данному активу, т.е. возможность заработка с понижения котировок бумаги.'
+    },
+    {
+      name: 'Operations with leverage:',
+      path: 'RADAR_DATA.PROPS.PROP_KREDIT',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: '[EN]Возможность покупки бумаг с использованием заемных средств.'
     },
 
     // {
@@ -357,6 +399,14 @@ export default {
       annotation: 'EN[]'
     },
     {
+      name: 'Price/Action',
+      path: 'RADAR_DATA.PROPS.LASTPRICE',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'EN[]'
+    },
+    {
       name: 'Бета:',
       path: 'RADAR_DATA.PROPS.BETTA',
       typeValue: '',
@@ -369,6 +419,7 @@ export default {
     // path: 'PROP_SHORT',
     // },
   ],
+
   aboutBond: [
   {
       name: 'ISIN-код:',
@@ -688,7 +739,6 @@ export default {
           typeIndicator: ''
       }
   ],
-
   bonds: {
     isin: 'ISIN:',
     currentPrice: 'Текущая цена(%):',
@@ -718,7 +768,7 @@ export default {
       'Закрытие реестра',
       'Закрытие реестра Т-2',
       'Цена на закрытие реестра Т-2',
-      'Дивиденды (₽)',
+      'Дивиденды',
       'Дивиденды (%)',
     ],
     currentValue: 'Текущая цена',

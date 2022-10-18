@@ -61,12 +61,24 @@ export default defineComponent({
 
     onMounted(async () => {
       if (!isInit.value) {
+        store.commit('documentStore/resetIndicatorsReportBalanceChart');
+        store.commit('documentStore/resetIndicatorsReportProfitLossChart');
+        store.commit('documentStore/resetIndicatorsReportCashFlowChart');
+        store.commit('documentStore/resetSwitcherMiddleIndicators');
+        store.commit('documentStore/refreshComparisonStock');
+        store.commit('documentStore/resetViewedComparisonPercentIndicators');
         await init();
       }
     });
 
     onUnmounted( () => {
       store.commit('documentStore/resetState');
+      store.commit('documentStore/resetIndicatorsReportBalanceChart');
+      store.commit('documentStore/resetIndicatorsReportProfitLossChart');
+      store.commit('documentStore/resetIndicatorsReportCashFlowChart');
+      store.commit('documentStore/resetSwitcherMiddleIndicators');
+      store.commit('documentStore/refreshComparisonStock');
+      store.commit('documentStore/resetViewedComparisonPercentIndicators');
       isInit.value = false;
     });
 

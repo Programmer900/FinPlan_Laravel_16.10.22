@@ -1874,6 +1874,16 @@ textarea + .placeholder {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .header .logo svg {
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+  }
+  .header .container[data-v-ed558de2] {
+    height: 75px;
+  }
+}
 .picker {
   position: relative;
 }

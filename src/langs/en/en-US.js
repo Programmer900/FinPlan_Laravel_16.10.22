@@ -506,7 +506,7 @@ export default {
       'Closing the registry',
       'Closing the registry Т-2',
       'Price for closing the registry Т-2',
-      'Dividends (₽)',
+      'Dividends',
       'Dividends (%)',
     ],
     currentValue: 'Текущая цена',

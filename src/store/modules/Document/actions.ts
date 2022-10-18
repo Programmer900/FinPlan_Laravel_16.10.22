@@ -112,6 +112,7 @@ export const actions = {
       else if (config.type === routeDocumentTypes.bond) {
         const response = await api.getBond(config.region, config.id)
         console.log(response)
+        console.log(config.region, config.id)
         state.data = response.data
 
         //TODO Не работает
@@ -140,9 +141,6 @@ export const actions = {
         return false;
       }
 
-      console.log('config.id', config.id)
-
-
       //TODO Trable
       let rus_bond = false
       if (config.type === routeDocumentTypes.bond) {
@@ -156,9 +154,6 @@ export const actions = {
         var response = await api.getFinancialData(config.region, config.id);
         var responseStockUsa = await api.getFinancialData(config.region, config.id);
       }
-
-      /*const response = await api.getFinancialData(config.region, config.id);
-      const responseStockUsa = await api.getFinancialData(config.region, config.id);*/
 
 
       if (config.type === routeDocumentTypes.bond) {
@@ -174,6 +169,45 @@ export const actions = {
       state.reportProfitLossData = responseStockUsa.data;
       state.reportCashFlow = responseStockUsa.data;
 
+      let linked_company1 = null
+      let linked_company2 = null
+
+      let linked_companyUsa1 = null
+      let linked_companyUsa2 = null
+
+      if(state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_RUS?.length > 0) {
+        // @ts-ignore
+        linked_company1 = await api.getCompanyDescription(
+          config.region,
+          state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_RUS[0],
+        );
+      }
+
+      if(state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_RUS?.length === 2) {
+        // @ts-ignore
+        linked_company2 = await api.getCompanyDescription(
+          config.region,
+          state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_RUS[1],
+        );
+      }
+
+      if(state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_USA?.length > 0) {
+        // @ts-ignore
+        linked_companyUsa1 = await api.getCompanyDescription(
+          config.region,
+          state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_USA[0],
+        );
+      }
+
+      if(state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_USA?.length === 2) {
+        // @ts-ignore
+        linked_companyUsa2 = await api.getCompanyDescription(
+          config.region,
+          state.data?.RADAR_DATA.COMPANY.LINKED_COMPANY_USA[1],
+        );
+      }
+
+
       response = await api.getCompanyDescription(
         config.region,
         state.data?.RADAR_DATA.PROPS.EMITENT_ID,
@@ -181,6 +215,16 @@ export const actions = {
 
       // @ts-ignore
       state.emitentData = response.data;
+      // @ts-ignore
+      state.emitentData2 = linked_company1?.data;
+      // @ts-ignore
+      state.emitentData3 = linked_company2?.data;
+
+      // @ts-ignore
+      state.emitentDataUsa2 = linked_companyUsa1?.data;
+      // @ts-ignore
+      state.emitentDataUsa3 = linked_companyUsa2?.data;
+
       state.region = config.region;
       state.type = config.type;
       state.id = config.id;

@@ -85,6 +85,8 @@ export const getters = {
     return null;
   },
   getEmitentData: (state: IDocumentState): DynamicObject | null => state.emitentData,
+  getEmitentData2: (state: IDocumentState): DynamicObject | null => state.emitentData2,
+  getEmitentData3: (state: IDocumentState): DynamicObject | null => state.emitentData3,
   getSecId: (state: IDocumentState): string | null => state.data?.RADAR_DATA.PROPS.ISIN,
 
   getIndicatorsChart: (state: IDocumentState): IIndicatorsChart => state.indicatorsChart,

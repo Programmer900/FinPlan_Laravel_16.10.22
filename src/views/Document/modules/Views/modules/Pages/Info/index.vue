@@ -8,7 +8,13 @@
               :key="index"
           >
 
-          <li v-if="getValue($t(`${typeStock}[${index - 1}].path`))">
+          <li
+            v-if="getValue($t(`${typeStock}[${index - 1}].path`))"
+            style="
+              border-bottom: 1px solid #ccc;
+              padding-bottom: 10px;
+              "
+          >
 
               <p style="font-weight: bold">{{ $t(`${typeStock}[${index - 1}].name`) }}</p>
               <div style="position: relative; display: flex;" class="params-emitent">
@@ -133,6 +139,14 @@ export default defineComponent({
           dividendsDescription = getDocData.value['RADAR_DATA']['PROPS']['PROP_ISTOCHNIK'] || ''
         }
 
+        if(path === 'RADAR_DATA.PROPS.PROP_DIVIDEND_DESCRIPTION') {
+          console.log('PROP_DIVIDEND_DESCRIPTION', getDocData.value['RADAR_DATA']['PROPS']['PROP_DIVIDEND_DESCRIPTION'])
+          const text = getDocData.value['RADAR_DATA']['PROPS']['PROP_DIVIDEND_DESCRIPTION']
+
+          //@ts-ignore
+          deepObject = text.toLocaleString()
+        }
+
         if(path === 'RADAR_DATA.PROPS.CSV_VID_DEFOLT') {
             //@ts-ignore
             if(deepObject === '' || deepObject === undefined) {
@@ -176,6 +190,17 @@ export default defineComponent({
         }
 
         if(path === 'RADAR_DATA.PROPS.PROP_SHORT') {
+          //@ts-ignore
+          if(deepObject === '') {
+            //@ts-ignore
+            deepObject = 'Невозможны'
+          } else {
+            //@ts-ignore
+            deepObject = deepObject?.toLocaleString()
+          }
+        }
+
+        if(path === 'RADAR_DATA.PROPS.PROP_KREDIT') {
           //@ts-ignore
           if(deepObject === '') {
             //@ts-ignore
@@ -286,6 +311,31 @@ export default defineComponent({
           deepObject = deepObject + ' (' + text + getDocSector.value[0].PSale.toFixed(2) + ')'
         }
 
+        if(path === 'RADAR_DATA.PROPS.LASTPRICE') {
+          let text = `Цена акции на сегодня (${new Date().getDate() + "." + (new Date().getMonth() + 1) + "." + new Date().getFullYear()}): `
+
+          //@ts-ignore
+          deepObject = text + deepObject?.toFixed(2) + ' руб.'
+        }
+
+        if(path === 'RADAR_DATA.PROPS.PROP_MMVB') {
+          const indexes = computed(() => store.getters['documentStore/getIndexes'])
+          let text = `Бумага состоит в индексах: `
+
+          if(indexes.value.length === 1) {
+            const index = indexes.value[0]
+
+            //@ts-ignore
+            deepObject = text + index
+          } else if (indexes.value.length > 1) {
+            const index = indexes.value.join(", ")
+
+            //@ts-ignore
+            deepObject = text + index
+          }
+
+        }
+
 
         if(symbol) {
           switch (symbol) {
@@ -306,10 +356,11 @@ export default defineComponent({
         } else {
           result = String(deepObject);
         }
-        console.log('RES', result)
+        console.log('RES', result, path)
+
         if(
           result.split(' ')[0] === 'undefined' || result.split(' ')[0] === 'NaN.NaN.NaN' ||
-          result.split(' ')[0] === '' || result.split(' ')[0] === 'NaN'
+          result === '' || result.split(' ')[0] === 'NaN'
           || result.split(' ')[0] === 'undefined%' || result.split(' ')[0] == undefined
         ) {
           return false
@@ -367,7 +418,7 @@ export default defineComponent({
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 700px;
+      //width: 700px;
       margin-top: 30px;
 
       > p {
@@ -376,6 +427,7 @@ export default defineComponent({
         width: 50%;
 
         margin: 0;
+        margin-right: 5px;
         color: black;
         font-size: 18px;
       }

@@ -3,7 +3,8 @@
     <div class="flexWrapperColumn">
       <div class="methodology defaultBlack27px defaultGrey20px" v-if="!isNotFound">
         <h1>{{ $t('dividends.methodLabel') }}</h1>
-        <p>{{ getCalcMethods }}</p>
+        <p v-if="getCalcMethods">{{ getCalcMethods }}</p>
+        <p v-else>Четкой дивидендной политики в открытых источниках не обнаружено</p>
       </div>
       <div v-if="isInit" class="table">
         <template v-if="!isNotFound">

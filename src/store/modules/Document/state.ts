@@ -99,6 +99,13 @@ export interface IDocumentState {
   reportCashFlow: DynamicObject | null;
 
   emitentData: DynamicObject | null;
+
+  emitentData2: DynamicObject | null;
+  emitentData3: DynamicObject | null;
+
+  emitentDataUsa2: DynamicObject | null;
+  emitentDataUsa3: DynamicObject | null;
+
   currentComparison: DynamicObject | null;
   type: string | null;
   region: string | null;
@@ -800,6 +807,12 @@ export const vanilaState = (): IDocumentState => ({
   reportCashFlowData: null,
 
   emitentData: null,
+  emitentData2: null,
+  emitentData3: null,
+
+  emitentDataUsa2: null,
+  emitentDataUsa3: null,
+
   currentComparison: null,
   type: null,
   region: null,

@@ -12,7 +12,8 @@
         >
          <router-link exact :to="fullPath + '/' + button.link" class="reportLink">{{ button.name }}</router-link>
         </p>
-        <h3 v-else class="default-w-700" data-v-6e658b22="">Нет данных</h3>
+        <div v-else  class="flexWrapperNotFound"><h4 class="default-w-200" data-v-6e658b22="">Нет данных</h4></div>
+
       </div>
     </div>
     <template v-if="isUsa">
@@ -233,5 +234,16 @@ p .reportLink {
 
 p.isClicked .reportLink {
   color: #fff !important;
+}
+
+.flexWrapperNotFound {
+  padding: 0 20px;
+  h4 {
+    font-family: Montserrat, sans-serif;
+    color: #2f2f2f;
+    font-size: 19px;
+    font-weight: 400;
+
+  }
 }
 </style>

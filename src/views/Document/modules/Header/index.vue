@@ -16,6 +16,18 @@
               }}</span>
               <div class="types default-w-bold">
                 <span v-for="index of getIndexes" :key="index">{{ index }}</span>
+                <div v-if="getIndexes.length > 0" class="popper-div">
+                  <Popper :hover="true" :placement="'top'" :click="true" arrow width="420" zIndex="99">
+                    <img alt="!!!" :src="alertIcon" class="alert-icon" />
+                    <template #content>
+                      <div>
+                        {{ getIndexes.length > 1 ? 'Акция содержится в индексах' : 'Акция содержится в индексе' }}
+
+                        <div style="font-size: 14px; line-height: 18px" v-for="index of getIndexes" :key="index"><b>{{ index }}</b></div>
+                      </div>
+                    </template>
+                  </Popper>
+                </div>
               </div>
             </div>
           </div>
@@ -25,14 +37,12 @@
             <div class="stockInfoHeaderDescription">
               <p class="default-w-400">
 
-                <!--{{ getData }}-->
-
                 {{ getData.RADAR_DATA.PROPS.PROP_TIP_AKTSII || getData.RADAR_DATA.PROPS.TYPE }}
-                {{ $t('securityHeader.stock.name').toLowerCase() }} {{ getName }} ({{
+                {{ $t(`securityHeader.${getType}.name`) }} {{ getName }} ({{
                   $t('securityHeader.stock.ticker')
                 }}
-                - {{ getData.RADAR_DATA.PROPS.SECID }}) {{ $t('securityHeader.stock.date') }}
-                {{ date }}. {{ $t('securityHeader.stock.emitent') }} {{ getData.RADAR_DATA.COMPANY?.NAME ? getData.RADAR_DATA.COMPANY.NAME : getData.RADAR_DATA.NAME  }}.
+                - {{ getData.RADAR_DATA.PROPS.SECID }})
+                {{ getData.RADAR_DATA.PROPS.HIDEN ? $t('securityHeader.stock.dateNot') : $t('securityHeader.stock.date') + date }}. {{ $t('securityHeader.stock.emitent') }} {{ getData.RADAR_DATA.COMPANY?.NAME ? getData.RADAR_DATA.COMPANY.NAME : getData.RADAR_DATA.NAME  }}.
               </p>
             </div>
 
@@ -91,11 +101,16 @@
 <script lang="ts">
 import { defineComponent, onMounted } from 'vue';
 import { useStore } from 'vuex';
+import { useRoute } from 'vue-router';
 import arrowUp from '@/assets/icons/arrow-up.svg';
 import arrowDown from '@/assets/icons/arrow-red.svg';
+import alertIcon from '@/assets/icons/alert-circle.svg';
+
+import Popper from 'vue3-popper'
 
 export default defineComponent({
   name: 'DocumentHeader',
+  components: { Popper },
   setup() {
     const store = useStore();
     const route = useRoute();
@@ -122,27 +137,49 @@ export default defineComponent({
     onMounted(() => {
       //console.log(store.getters['documentStore/getData'])
       //@ts-ignore
-      const dateArr = Object.values(
-        store.getters['documentStore/getData'].GRAPH_CANDLE_DATA.M,
-      )[0].UF_DATE_FROM.split('-');
-      dateArr.reverse();
-      date.value = dateArr.join('.');
+      const GRAPH_CANDLE_DATA = store.getters['documentStore/getData']?.GRAPH_CANDLE_DATA
+      console.log('GRAPH_CANDLE_DATA', GRAPH_CANDLE_DATA)
+      console.log('GRAPH_CANDLE_DATA', Object.keys(GRAPH_CANDLE_DATA).length)
+      if(Object.keys(GRAPH_CANDLE_DATA).length !== 0) {
+          //@ts-ignore
+          const dateArr = Object.values(
+              store.getters['documentStore/getData'].GRAPH_CANDLE_DATA.M
+          )[0].UF_DATE_FROM.split('-');
+          if(dateArr) {
+              dateArr.reverse();
+              date.value = dateArr.join('.');
+          }
+      }
     });
 
+    const getType = computed(() => {
+        switch (route.params.type) {
+            case 'bond':
+                return 'bond'
+            case 'stock':
+                return 'stock'
+        }
+    })
+
     return {
+      alertIcon,
       date,
       getData: store.getters['documentStore/getData'],
       getIndexes: store.getters['documentStore/getIndexes'],
       getName: store.getters['documentStore/getName'],
       arrowUp,
       arrowDown,
-      checkValue,
+      checkValue, getType,
+      route,
     };
   },
 });
 </script>
 
 <style scoped lang="scss">
+.poper {
+  max-width: 350px !important;
+}
 .flexWrapperColumn {
   margin: 0 auto -50px auto;
 

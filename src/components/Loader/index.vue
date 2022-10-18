@@ -40,8 +40,8 @@ export default defineComponent({
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
     margin: auto;
     transform-origin: center center;
     animation: rotate 2s linear infinite;

@@ -1,13 +1,15 @@
 <template>
   <div class="tableAlert flexRowCenter">
     <img v-if="icon" alt="Уведомление" :src="alertIcon"  />
-    <p :class="{ml0: !icon}">{{ $t('tableTexts.alertText') }}</p>
+    <p :class="{ml0: !icon}">{{ $t('tableTexts.alertText') }} {{ getCurrency }}</p>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+  import { computed, defineComponent } from 'vue';
 import alertIcon from '@/assets/icons/alert-circle.svg';
+
+import { useStore } from 'vuex'
 
 export default defineComponent({
   name: 'DocumentIndicatorsTableAlert',
@@ -18,8 +20,28 @@ export default defineComponent({
     }
   },
   setup() {
+    const store = useStore()
+    console.log(store)
+
+    const getRegion = computed(() => store.getters['documentStore/getRegion'])
+    const getCurrency = computed(() => {
+      console.log(getRegion)
+
+      switch (getRegion.value) {
+        case 'RUS':
+          return 'млн руб.'
+          break;
+        case 'USA':
+          return 'млн. долл. США'
+          break;
+        default: 'млн. долл. США'
+          break;
+      }
+    })
+
     return {
       alertIcon,
+      getCurrency
     };
   },
 });

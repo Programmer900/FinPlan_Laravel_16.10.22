@@ -1,10 +1,9 @@
 import { DynamicObject } from '@/interfaces';
+import { monthOfTheYear } from '@/helpers'
 
 class MeUtils {
   private seriesData: number[] = [];
-
   private candleChartData: number[][] = [];
-
   private categoriesData: number[] = [];
 
   private initData(data: DynamicObject): void {
@@ -27,7 +26,6 @@ class MeUtils {
       ]);
     });
   }
-
   private getDefaultChart(): DynamicObject {
     const categories = [...this.categoriesData];
     return {
@@ -47,6 +45,22 @@ class MeUtils {
       },
       credits: {
         enabled: false,
+      },
+      tooltip: {
+        align: 'left',
+        x: 10,
+        style: {
+          fontSize: '16px',
+          color: '#030303',
+          fontFamily: 'Montserrat',
+        },
+        formatter() {
+          console.log(this)
+          monthOfTheYear(categories)
+          // @ts-ignore
+          return `${this.y} ₽ ${categories[this.x]} г.`;
+        },
+        shared: true
       },
       navigator: {
         adaptToUpdatedData: true,
@@ -145,7 +159,6 @@ class MeUtils {
       },
     };
   }
-
   private getCandleChart(): DynamicObject {
     return {
       /*lang: {
@@ -286,7 +299,6 @@ class MeUtils {
       },
     };
   }
-
   public init(data: DynamicObject): DynamicObject {
     this.initData(data);
     return {

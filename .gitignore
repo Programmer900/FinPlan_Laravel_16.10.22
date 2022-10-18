@@ -12,6 +12,7 @@ old_config
 pnpm-lock.yaml
 _app/dist
 serverless/api/renderer
+public/upload
 serverless/public
 auto-imports.d.ts
 components.d.ts

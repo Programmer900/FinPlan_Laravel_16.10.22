@@ -8,6 +8,7 @@ import {
 
 export const getters = {
   getData: (state: IDocumentState): DynamicObject | null => state.data,
+  getSector: (state: IDocumentState): DynamicObject | null => state.sector,
   getType: (state: IDocumentState): string | null => state.type,
   getRegion: (state: IDocumentState): string | null => state.region,
   getId: (state: IDocumentState): string | null => state.id,
@@ -98,8 +99,6 @@ export const getters = {
 
   getIndicatorsChartCategoriesCustom: (state: IDocumentState): number[] | string[] => {
     if (state.currentTableProp !== 'year') {
-      console.log('allCategoriesChartForTable WHERE!!!!!!', state.allCategoriesChartForTable)
-      console.log('allCategoriesChartForTableReport WHERE!!!!!!', state.allCategoriesChartForTableReport)
       const result: string[] = [];
       for (let i = 0; i < state.allCategoriesChartForTable.length; i++) {
         const {y, kv} = state.allCategoriesChartForTable[i]

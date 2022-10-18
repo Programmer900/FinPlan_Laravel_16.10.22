@@ -4,6 +4,7 @@ class Utils {
    * @param
    */
   public getClosePriceGraph(el: string) {
+    console.log(el)
     const period = el.split('-')
     let keyPeriod = ''
 

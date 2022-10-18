@@ -1,5 +1,4 @@
 <template>
-
   <div v-if="itemsMap.size > 0">
     <div v-for="(symbol, index) in itemsMap" :key="index" class="stock">
       <h3>{{ symbol[0] }}</h3>
@@ -99,7 +98,7 @@ export default defineComponent({
         console.log(response.value)
         createGrid();
       } else if (route.params.type === 'bonds') {
-        const _response = await api.getActivesList('RUS', 'obligations', 100000, 1);
+        const _response = await api.getActivesList('RUS', 'obligations', 100, 1);
         response.value = _response.data;
         // console.log(response.value);
         items.value = [...response.value.ITEMS];

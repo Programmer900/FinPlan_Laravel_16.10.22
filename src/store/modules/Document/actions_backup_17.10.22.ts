@@ -1049,16 +1049,19 @@ export const actions = {
 
       let yearChartCategories = []
 
+      console.log(priceY)
       Object.keys(priceY).map(k => {
         const key = k.split('-') //['4', '2012', '...']
 
         if(key[0] === '4') {
           // @ts-ignore
           yearChartCategories.push(key[1])
-          console.log(yearChartCategories)
         }
 
       })
+
+      //TODO @Показатели по годам(изменено 17.10.22)
+      state.indicatorsChartCategories.push(...yearChartCategories.reverse());
 
       monthCandleData.forEach((item: DynamicObject, idx: number) => {
         console.log(item)
@@ -1071,17 +1074,22 @@ export const actions = {
 
         //const yearOnTable = [... new Set(JSON.parse(JSON.stringify(state.indicatorsChartYearForTable)))]
         //state.indicatorsChart.quotes.data.push(Number(item.UF_CLOSE));
+        //state.indicatorsChart.quotes.data.push(Number(monthCandleData[idx].UF_CLOSE));
+
         if (state.currentTableProp === 'year' && month === 12) {
           // @ts-ignore
           if (yearChartCategories.includes(UF_DATE)) {
+            //TODO @Показатели по годам(изменено 17.10.22)
+            //state.indicatorsChart.quotes.data.pop()
             state.indicatorsChart.quotes.data.push(Number(item.UF_CLOSE));
-            state.indicatorsChartCategories.push(new Date(item.UF_DATE_TO).getFullYear());
+            //state.indicatorsChartCategories.push(new Date(item.UF_DATE_TO).getFullYear());
           }
         } else if (state.currentTableProp === 'quarter' && month % 3 === 1) {
           state.indicatorsChartQuarter.push(`${utils.getQuarterByMonth(month)}кв.`);
           //state.indicatorsChart.quotes.data.push(Number(item.UF_CLOSE));
-          state.indicatorsChartCategories.push(new Date(item.UF_DATE_TO).getFullYear());
+          //state.indicatorsChartCategories.push(new Date(item.UF_DATE_TO).getFullYear());
         }
+
       });
 
       let catLength = state.indicatorsChartCategories.length;
@@ -1089,8 +1097,8 @@ export const actions = {
       console.log(catLength)
       console.log(indicLength)
 
-
       if (catLength < indicLength) {
+        console.log('=======::   catLength < indicLength   ::======')
         state.indicatorsChart.quotes.data.push(
           Number(monthCandleData[monthCandleData.length - 1].UF_CLOSE),
         );

@@ -46,6 +46,7 @@ export default {
       lowerName: 'акция',
       ticker: 'тикер акции',
       date: 'находится в обращении с',
+      dateNot: 'больше не обращается на Московской бирже',
       emitent: 'Эмитентом облигации является',
       dynamics: {
         text: 'Динамика акции:',
@@ -75,49 +76,56 @@ export default {
       path: 'RADAR_DATA.PROPS.ISIN',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'уникальный код бумаги, который однозначно идентифицирует ценную бумагу'
     },
     {
       name: 'Тип акции:',
       path: 'RADAR_DATA.PROPS.PROP_TIP_AKTSII',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'обыкновенные акции - дают право в управлении компании и подвержены влиянию роста и развития компании, привилегированные - имеют преимущественные права по получению дивидендов.'
     },
     {
       name: 'Сектор:',
       path: 'RADAR_DATA.PROPS.PROP_SEKTOR',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Секторальная принадлежность компании включает в себя ряд особенностей, которые присущи данной отрасли.'
     },
     {
       name: 'Количество акций в лоте:',
       path: 'RADAR_DATA.PROPS.LOTSIZE',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Акции торгуются лотами, т.е. это минимальное количество акций при покупке.'
     },
     {
       name: 'Объем выпуска:',
       path: 'RADAR_DATA.PROPS.ISSUESIZE',
       typeValue: '',
       symbol: 'шт.',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Акции торгуются лотами, т.е. это минимальное количество акций при покупке.'
     },
     {
       name: 'Фрифлоат:',
       path: 'RADAR_DATA.PROPS.CAP_X_FREEFLOAT_PERCENT',
       typeValue: '',
       symbol: '%',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: ''
     },
     {
       name: 'Операции Short:',
       path: 'RADAR_DATA.PROPS.PROP_SHORT',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Возможность открытия короткой позиции по данному активу, т.е. возможность заработка с понижения котировок бумаги.'
     },
     // {
     //   name: 'Объем выпукска:',
@@ -137,89 +145,105 @@ export default {
       path: 'RADAR_DATA.PROPS.ISSUECAPITALIZATION',
       typeValue: 'num',
       symbol: 'currency',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'это рыночная оценка стоимости компании, рассчитанная на основе текущих цен выпущенных акций. Показатель позволяет оценить размеры компании-эмитента'
     },
     {
       name: 'Капитализация фрифлоат:',
       path: 'RADAR_DATA.PROPS.CAP_X_FREEFLOAT',
       typeValue: 'num',
       symbol: 'currency',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: ''
     },
     {
       name: 'Расчетный потенциал:',
-      path: '',
+      path: 'RADAR_DATA.DYNAM.Таргет',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Расчетный потенциал = сумма фундаментальной оценки разных источников роста акции: расчет недооценки, оценка роста компании, оценка дивидендной доходности. Не является прогнозом. Не является персональной инвестиционной рекомендацией'
     },
     {
       name: 'Просад:',
       path: 'RADAR_DATA.PROPS.PROP_PROSAD',
-      typeValue: 'num',
-      symbol: '%',
-      typeIndicator: ''
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'это показатель оценки риска (максимальная просадка за последние 3 года с учетом текущей технической картины)'
     },
     {
       name: 'Дивиденды за год:',
       path: 'RADAR_DATA.PROPS.PROP_DIVIDENDY_2018',
       typeValue: 'num',
       symbol: 'currency',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Дивиденды за год с учетом объявленных и выплаченных дивидендов. В расшифровке указаны дивидендные платежи и состояние выплаты (рекомендовано / утверждено / выплачено)'
     },
     {
       name: 'Методика расчета дивидендов:',
       path: 'RADAR_DATA.PROPS.PROP_DIVIDEND_DESCRIPTION',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Методика расчета дивидендов публикуется во внутренней документации компании - дивидендная политика и устав организации.'
     },
     {
       name: 'P/E:',
       path: 'RADAR_DATA.DYNAM.PE',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'отношение капитализации компании к скользящей чистой прибыли. Данный мультипликатор показывает уровень недооценки актива. Чем ниже мультипликатор, тем выше недооценка.'
     },
     {
       name: 'P/B:',
       path: 'RADAR_DATA.DYNAM.PB',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: ''
     },
     {
       name: 'P/Equity:',
       path: 'RADAR_DATA.DYNAM.P/Equity',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'отношение капитализации компании к собственному капиталу. Значение показателя менее 1 означает, что актив стоит меньше, чем размер собственного капитала.'
     },
     {
       name: 'P/Sale:',
       path: 'RADAR_DATA.DYNAM.P/Sale',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: ''
     },
     {
       name: 'Доля экспорта:',
       path: 'RADAR_DATA.PROPS.PROP_EXPORT_SHARE',
       typeValue: '',
       symbol: '%',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: ''
     },
     {
       name: 'Бета:',
       path: 'RADAR_DATA.PROPS.BETTA',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'Это статистический коэффициент, который характеризует движение отдельной акции относительно всего рынка в целом. Если бета > 1, то акция в статистике обгоняет рынок, от 0 до 1 - движется в одну сторону с рынком, но менее волатильна, менее 0 - акция движется противоположно рынку. Подробнее в статье. Бета расчитана за 5 лет.'
     },
-    // {
-    // name: 'Рейтинг радара:',
-    // path: 'PROP_SHORT',
-    // },
+    {
+      name: 'Рейтинг радара:',
+      path: 'RADAR_DATA.PROPS.PRC_OF_USERS',
+      typeValue: '',
+      symbol: '%',
+      typeIndicator: '',
+      annotation: ''
+    },
   ],
   aboutStockUSA: [
     {
@@ -227,28 +251,32 @@ export default {
       path: 'RADAR_DATA.PROPS.ISIN',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Сектор:',
       path: 'RADAR_DATA.PROPS.SECTOR',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Отрасль:',
       path: 'RADAR_DATA.PROPS.INDUSTRY',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Объем выпуска:',
       path: 'RADAR_DATA.PROPS.SECURITIES_QUANTITY',
       typeValue: '',
       symbol: 'шт.',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
 
     // {
@@ -269,73 +297,410 @@ export default {
       path: 'RADAR_DATA.PROPS.ISSUECAPITALIZATION',
       typeValue: 'num',
       symbol: 'currency',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Расчетный потенциал:',
-      path: '',
+      path: 'RADAR_DATA.DYNAM.Таргет',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Просад:',
       path: 'RADAR_DATA.PROPS.DRAWDOWN',
       typeValue: 'num',
       symbol: '%',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Дивиденды за год:',
       path: 'RADAR_DATA.PROPS.PROP_DIVIDENDY_2018',
       typeValue: 'num',
       symbol: 'currency',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'P/E:',
       path: 'RADAR_DATA.DYNAM.PE',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'P/B:',
       path: 'RADAR_DATA.DYNAM.PB',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'P/Equity:',
       path: 'RADAR_DATA.DYNAM.P/Equity',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'P/Sale:',
       path: 'RADAR_DATA.DYNAM.P/Sale',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     {
       name: 'Бета:',
       path: 'RADAR_DATA.PROPS.BETTA',
       typeValue: '',
       symbol: '',
-      typeIndicator: ''
+      typeIndicator: '',
+      annotation: 'EN[]'
     },
     // {
     // name: 'Рейтинг радара:',
     // path: 'PROP_SHORT',
     // },
   ],
+  aboutBond: [
+  {
+      name: 'ISIN-код:',
+      path: 'RADAR_DATA.PROPS.ISIN',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'уникальный код бумаги, который однозначно идентифицирует ценную бумагу'
+  },
+  {
+      name: 'Тип облигации:',
+      path: 'RADAR_DATA.PROPS.CSV_VID_OLB',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'по принадлежности эмитента, а также наличие признака голубые фишки - бумаги отобранные экспертами компании Fin-Plan'
+  },
+  {
+      name: 'Дефолты:',
+      path: 'RADAR_DATA.PROPS.CSV_VID_DEFOLT',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'наличие дефолтов по данной облигации и срок исполнения обязательств.'
+  },
+  {
+      name: 'Номинал:',
+      path: 'RADAR_DATA.PROPS.FACEVALUE',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: ''
+  },
+  {
+      name: 'Текущая цена:',
+      path: 'RADAR_DATA.PROPS.LASTPRICE',
+      typeValue: '',
+      symbol: '%',
+      typeIndicator: '',
+      annotation: ''
+  },
+  {
+      name: 'НКД:',
+      path: 'RADAR_DATA.PROPS.ACCRUEDINT',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'Накопленный купонный доход - это часть купонного дохода по облигации, которая рассчитывается пропорционально длительности купона. Данная сумма учитывается при покупке и продаже облигаций.'
+  },
+  {
+    name: 'Текущая цена с учетом НКД:',
+    path: 'RADAR_DATA.DYNAM.Цена покупки',
+    typeValue: '',
+    symbol: '',
+    typeIndicator: '',
+    annotation: 'рассчитана как произведение \'Номинала\' и \'Текущей цены\' + Накопленный купонный доход (НКД).'
+  },
+  {
+      name: 'Уровень листинга:',
+      path: 'RADAR_DATA.PROPS.LISTLEVEL',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+      annotation: 'уровень листинга означает соответствие требованиям и условиям биржи. Чем выше уровень (1, 2), тем лучше.'
+  },
+  {
+      name: 'Размер купона:',
+      path: 'RADAR_DATA.PROPS.COUPONVALUE',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  },
+  {
+      name: 'Длит. купона:',
+      path: 'RADAR_DATA.PROPS.COUPONPERIOD',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  },
+  {
+      name: 'Дата выпл. куп.:',
+      path: 'RADAR_DATA.PROPS.NEXTCOUPON',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  },
+  {
+      name: 'Дата погашения облигации:',
+      path: 'RADAR_DATA.PROPS.MATDATE',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  },
+  {
+      name: 'Кол-во дней до погашения облигации:',
+      path: 'RADAR_DATA.DYNAM.Кол-во дней до погашения',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  },
+  {
+    name: 'Дюрация:',
+    path: 'RADAR_DATA.PROPS.DURATION',
+    typeValue: '',
+    symbol: 'дней',
+    typeIndicator: '',
+    annotation: 'период времени, через который нам вернется инвестируемая сумма. Облигации с более длинной дюрацией более волатильны.'
+  },
+  {
+      name: 'Расчетная годовая доходность:',
+      path: 'RADAR_DATA.DYNAM.Доходность годовая',
+      typeValue: '',
+      symbol: '%',
+      typeIndicator: '',
+      annotation: 'Годовая доходность = Общая доходность / Количество дней до погашения * 365 * 100%. При сроке погашения облигации меньше года, следует ориентироваться на общую доходность!'
+  },
+  {
+      name: 'Общая доходность:',
+      path: 'RADAR_DATA.DYNAM.Доходность общая',
+      typeValue: '',
+      symbol: '%',
+      typeIndicator: '',
+      annotation: 'Общая доходность к погашению облигации = (Цена погашения с учетом купонов - Текущая цена с учетом НКД) / Текущая цена с учетом НКД * 100%.'
+  },
+  {
+      name: 'Доходность к оферте (годовая):',
+      path: 'RADAR_DATA.DYNAM.Доходность к офферте',
+      typeValue: '',
+      symbol: '%',
+      typeIndicator: '',
+      annotation: 'Оферта - это возможность досрочного погашения облигаций. Доходность к оферте рассчитывается также как годовая доходность, только к дате оферты.'
+  },
+  {
+    name: 'Дата оферты:',
+    path: 'RADAR_DATA.PROPS.OFFERDATE',
+    typeValue: '',
+    symbol: '',
+    typeIndicator: '',
+    annotation: 'В зависимости от вида оферты наступают различные права и обязанности эмитента и владельца облигации.'
+  },
+  {
+    name: 'Кол-во дней до оферты:',
+    path: 'RADAR_DATA.DYNAM.Кол-во дней до оферты',
+    typeValue: '',
+    symbol: '',
+    typeIndicator: '',
+    annotation: ''
+  },
+  {
+      name: 'Рейтинг радара:',
+      path: 'RADAR_DATA.DYNAM.PB',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  },
+  {
+      name: 'Цена погашения с учетом купонов:',
+      path: 'RADAR_DATA.DYNAM.Цена погашения с учетом купонов',
+      typeValue: '',
+      symbol: '',
+      typeIndicator: '',
+    annotation: ''
+  }
+  ],
+  aboutBondUSA:[
+      {
+          name: 'ISIN-код:',
+          path: 'RADAR_DATA.PROPS.ISIN',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Тип облигации:',
+          path: 'RADAR_DATA.PROPS.CSV_VID_OLB',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Дефолты:',
+          path: 'RADAR_DATA.PROPS.CSV_VID_DEFOLT',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Номинал:',
+          path: 'RADAR_DATA.PROPS.FACEVALUE',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Текущая цена:',
+          path: 'RADAR_DATA.PROPS.LASTPRICE',
+          typeValue: '',
+          symbol: '%',
+          typeIndicator: ''
+      },
+      {
+          name: 'НКД:',
+          path: 'RADAR_DATA.PROPS.ACCRUEDINT',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Текущая цена с учетом НКД:',
+          path: 'RADAR_DATA.DYNAM.Цена покупки',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Уровень листинга:',
+          path: 'RADAR_DATA.PROPS.LISTLEVEL',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Размер купона:',
+          path: 'RADAR_DATA.PROPS.COUPONVALUE',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Длит. купона:',
+          path: 'RADAR_DATA.PROPS.COUPONPERIOD',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Дата выпл. куп.:',
+          path: 'RADAR_DATA.PROPS.NEXTCOUPON',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Дата погашения облигации:',
+          path: 'RADAR_DATA.PROPS.MATDATE',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Кол-во дней до погашения облигации:',
+          path: 'RADAR_DATA.DYNAM.Кол-во дней до погашения',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Дюрация:',
+          path: 'RADAR_DATA.PROPS.DURATION',
+          typeValue: '',
+          symbol: 'дней',
+          typeIndicator: ''
+      },
+      {
+          name: 'Расчетная годовая доходность:',
+          path: 'RADAR_DATA.DYNAM.Доходность годовая',
+          typeValue: '',
+          symbol: '%',
+          typeIndicator: ''
+      },
+      {
+          name: 'Общая доходность:',
+          path: 'RADAR_DATA.DYNAM.Доходность общая',
+          typeValue: '',
+          symbol: '%',
+          typeIndicator: ''
+      },
+      {
+          name: 'Доходность к оферте (годовая):',
+          path: 'RADAR_DATA.DYNAM.Доходность к офферте',
+          typeValue: '',
+          symbol: '%',
+          typeIndicator: ''
+      },
+      {
+          name: 'Дата оферты:',
+          path: 'RADAR_DATA.PROPS.OFFERDATE',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Кол-во дней до оферты:',
+          path: 'RADAR_DATA.DYNAM.Кол-во дней до оферты',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Рейтинг радара:',
+          path: 'RADAR_DATA.DYNAM.PB',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      },
+      {
+          name: 'Цена погашения с учетом купонов:',
+          path: 'RADAR_DATA.DYNAM.Цена погашения с учетом купонов',
+          typeValue: '',
+          symbol: '',
+          typeIndicator: ''
+      }
+  ],
+
   bonds: {
     isin: 'ISIN:',
     currentPrice: 'Текущая цена(%):',
     totalValue: 'Общая доходность(%):',
+    methodLabel: 'Методика расчетов купонов:',
+    tableHeaders: [
+        'Дата выплаты',
+        'Номинал',
+        'Купоны',
+        'Гашение',
+        'Денежный поток',
+    ]
   },
   discussion: {
     commentText:
@@ -440,10 +805,10 @@ export default {
     },
     indicatorsDescription: {
       capitalization: 'Это рыночная оценка стоимости компании, рассчитанная на основе текущих цен выпущенных акций. Показатель позволяет оценить размеры компании-эмитента',
-      averageRevenue: 'Выручка скользящая за год(Скользящая средняя (Moving Average или сокращенно MA) – это один из самых универсальных и популярных индикаторов на рынке, который может быть использован для торговли по тренду. Скользящая средняя показывает среднюю цену за указанный период времени)',
-      averageProfit: 'Прибыль скользящая за год(Скользящая средняя (Moving Average или сокращенно MA) – это один из самых универсальных и популярных индикаторов на рынке, который может быть использован для торговли по тренду. Скользящая средняя показывает среднюю цену за указанный период времени)',
-      returnOnEquity: 'Характеризует доходность бизнеса для его владельцев, рассчитанную после вычета процентов по кредиту. Это важнейший финансовый показатель отдачи для инвестора и собственника бизнеса, показывающий, насколько эффективно были использованы вложенные в дело средства.',
-      shareOfEquityInAssets: '(коэффициент автономии или финансовой независимости) является наиболее общим показателем финансовой устойчивости предприятия.',
+      averageRevenue: 'Это расчетный показатель, который рассчитывает выручку ровно за 1 год до даты отчета (сумма поквартальных или полугодовых данных). Сравнение по этому показателю позволяет адекватно оценивать показатели без учета сезонности и прочих некорректно влияющих факторов.',
+      averageProfit: 'Это расчетный показатель, который рассчитывает прибыль ровно за 1 год до даты отчета (сумма поквартальных или полугодовых данных). Сравнение по этому показателю позволяет адекватно оценивать показатели без учета сезонности и прочих некорректно влияющих факторов.',
+      returnOnEquity: 'Показатель эффективности вложенных собственных средств, рассчитывается как отношение скользящей чистой прибыли к собственному капиталу',
+      shareOfEquityInAssets: 'Показатель финансовой устойчивости компании, рассчитанный как отношение собственного капитала к общей сумме активов',
       betta: 'Это статистический коэффициент, который характеризует движение отдельной акции относительно всего рынка в целом. Если бета > 1, то акция в статистике обгоняет рынок, от 0 до 1 - движется в одну сторону с рынком, но менее волатильна, менее 0 - акция движется противоположно рынку. Подробнее в статье. Бета расчитана за 5 лет.',
       pe: 'Отношение капитализации компании к скользящей чистой прибыли. Данный мультипликатор показывает уровень недооценки актива. Чем ниже мультипликатор, тем выше недооценка.',
       dividends: 'Дивиденды за год с учетом объявленных и выплаченных дивидендов. В расшифровке указаны дивидендные платежи и состояние выплаты (рекомендовано / утверждено / выплачено)',
@@ -456,8 +821,8 @@ export default {
       evebitda: 'Отношение суммы капитализации компании и долгов к Ebitda. Данный мультипликатор показывает уровень недооценки актива. Чем ниже мультипликатор, тем выше недооценка.',
       debtebitda: 'Соотношение обязательств и EBITDA. Отражает способность предприятия исполнять свои финансовые обязательства. Приемлемым считается уровень данного коэффициента ниже 3',
 
-      yearSlidingRevenue: 'Выручка скользящая за год(Скользящая средняя (Moving Average или сокращенно MA) – это один из самых универсальных и популярных индикаторов на рынке, который может быть использован для торговли по тренду. Скользящая средняя показывает среднюю цену за указанный период времени)',
-      yearSlidingProfit: 'Прибыль скользящая за год(Скользящая средняя (Moving Average или сокращенно MA) – это один из самых универсальных и популярных индикаторов на рынке, который может быть использован для торговли по тренду. Скользящая средняя показывает среднюю цену за указанный период времени)',
+      yearSlidingRevenue: 'Это расчетный показатель, который рассчитывает выручку ровно за 1 год до даты отчета (сумма поквартальных или полугодовых данных). Сравнение по этому показателю позволяет адекватно оценивать показатели без учета сезонности и прочих некорректно влияющих факторов.',
+      yearSlidingProfit: 'Это расчетный показатель, который рассчитывает прибыль ровно за 1 год до даты отчета (сумма поквартальных или полугодовых данных). Сравнение по этому показателю позволяет адекватно оценивать показатели без учета сезонности и прочих некорректно влияющих факторов.',
       actives: 'Это все принадлежащие компании материальные и нематериалые ценности, запасы, денежные средства и долговые обязательства.',
       quotes: 'Текущая цена, объявленная продавцом или покупателем, по которой участники торгов готовы совершить продажу или покупку ценной бумаги. Это оценка актива, формируемая на основании показателей анализа спроса и предложения.',
       halfyearRevenue: 'Если компания отчитывается по полугодиям, то выручка за полугодие, рассчитана как разница между показателями \'Выручка (Отчет)\' за текущий период и предыдущее полугодие.',

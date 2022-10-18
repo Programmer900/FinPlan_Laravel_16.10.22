@@ -3,6 +3,7 @@
     <div class="greyBg">
       <div class="flexWrapperColumn">
         <button class="resetBtn"  @click="onCLickResetBtn()">Сбросить график</button>
+
         <div class="checkboxes flexRowCenter">
           <DocumentIndicatorsChartCheckboxes
             v-for="item in getChartDataKeys"
@@ -18,13 +19,24 @@
       </div>
     </div>
 
-    <DocumentIndicatorsTable
+    <DocumentIndicatorsTableObligations
+      v-if="isObligations"
       :isInit="isInit"
       :data="getIndicators"
       :categories="getChartCategories"
       @onChangeParam="onChangeParam"
       @onChangeChartDataView="onChangeChartDataView"
     />
+
+    <DocumentIndicatorsTable
+      v-else
+      :isInit="isInit"
+      :data="getIndicators"
+      :categories="getChartCategories"
+      @onChangeParam="onChangeParam"
+      @onChangeChartDataView="onChangeChartDataView"
+    />
+
   </div>
 </template>
 
@@ -36,20 +48,29 @@ import { useRoute } from 'vue-router';
 import { useStore } from 'vuex';
 import ChartDynamic from '@/components/Charts/Dynamic/index.vue';
 import DocumentIndicatorsTable from '@/views/Document/modules/Views/modules/IndicatorsTable/index.vue';
+import DocumentIndicatorsTableObligations from '@/views/Document/modules/Views/modules/IndicatorsTableObligations/index.vue';
 import DocumentIndicatorsChartCheckboxes from '@/views/Document/modules/Views/modules/Pages/CompanyIndicators/modules/ChartCheckboxes/index.vue';
 
 export default defineComponent({
   name: 'DocumentCompanyIndicatorsPage',
-  components: { DocumentIndicatorsChartCheckboxes, DocumentIndicatorsTable, ChartDynamic },
+  components: {
+    DocumentIndicatorsChartCheckboxes,
+    DocumentIndicatorsTable,
+    DocumentIndicatorsTableObligations,
+    ChartDynamic
+  },
   setup() {
     const route = useRoute();
     const store = useStore();
     const isInit = ref<boolean>(false);
     const hasBeenChanged = ref<boolean>(false);
+    const isObligations = ref<boolean>(false)
 
     const init = async () => {
       isInit.value = await store.dispatch('documentStore/initIndicatorsChart');
     };
+
+    const getCandle = store.getters['documentStore/getCandle']
 
     const reset = () => {
       isInit.value = false;
@@ -77,6 +98,7 @@ export default defineComponent({
 
     const getChartDataValues = computed(() =>
       Object.values(store.getters['documentStore/getIndicatorsChart']));
+    console.log(getChartDataValues)
 
     const getChartCategories = computed(
       () => store.getters['documentStore/getIndicatorsChartCategoriesCustom'].reverse(),
@@ -86,10 +108,14 @@ export default defineComponent({
       Object.keys(store.getters['documentStore/getIndicatorsChart']));
 
     const getIndicators = computed(() => store.getters['documentStore/getIndicatorsChart']);
-
     const getQuarters = computed(() => store.getters['documentStore/getIndicatorsQuarter']);
 
     onMounted(async () => {
+      console.log(route.params)
+      if(route.params.type === 'bond') {
+        isObligations.value = true
+      }
+
       await init();
     });
 
@@ -115,6 +141,11 @@ export default defineComponent({
       getChartDataValues,
       getQuarters,
       hasBeenChanged,
+      isObligations,
+
+
+
+      getCandle
     };
   },
 });

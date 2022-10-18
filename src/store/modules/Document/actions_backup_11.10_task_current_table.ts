@@ -107,7 +107,7 @@ export const actions = {
           }
         }
 
-        // Bond
+      // Bond
       }
       else if (config.type === routeDocumentTypes.bond) {
         const response = await api.getBond(config.region, config.id)
@@ -495,11 +495,7 @@ export const actions = {
 
         if (state.financialData?.data[el].currentPeriod) {
           // @ts-ignore
-          //state.allCategoriesChartForTable.push({ y: '', kv: `Текущий` })
-          state.indicatorsChartQuarterForTable.push(`${kv}кв.`);
-          state.indicatorsChartYearForTable.push(Number(y));
-          state.allCategoriesChartForTable.push({ y: Number(y), kv: `${kv}кв.` })
-          state.allCategoriesChartForTableReport.push({ y: Number(y), kv: `${kv}кв.` })
+          state.allCategoriesChartForTable.push({ y: '', kv: `Текущий` })
         } else {
           state.indicatorsChartQuarterForTable.push(`${kv}кв.`);
           state.indicatorsChartYearForTable.push(Number(y));
@@ -907,140 +903,140 @@ export const actions = {
       } else {
         finData.forEach((item: DynamicObject, idx) => {
 
-          if (state.currentTableProp === 'year' && Number(item.periodVal) !== 4) {
-            return;
-          }
-          console.log(item)
+            if (state.currentTableProp === 'year' && Number(item.periodVal) !== 4) {
+              return;
+            }
+            console.log(item)
 
-          /* // @ts-ignore
-           const yearSlidingRevenuePercentMiddleProfit = ((Number(item?.yearSlidingRevenue) / Math.floor(state.isMiddleIndicatorsSector[idx]?.yearSlidingRevenue)) * 100) || 0
-           // @ts-ignore
-           const yearSlidingPercentMiddleProfit = ((Number(item?.yearSlidingProfit) / Math.floor(state.isMiddleIndicatorsSector[idx]?.yearSlidingProfit)) * 100) || 0
-           // @ts-ignore
-           const activesPercentMiddleProfit = ((Number(item?.actives) / Math.floor(state.isMiddleIndicatorsSector[idx]?.actives)) * 100) || 0
-           // @ts-ignore
-           const equityPercentMiddleProfit = ((Number(item?.equity) / Math.floor(state.isMiddleIndicatorsSector[idx]?.equity)) * 100) || 0
+           /* // @ts-ignore
+            const yearSlidingRevenuePercentMiddleProfit = ((Number(item?.yearSlidingRevenue) / Math.floor(state.isMiddleIndicatorsSector[idx]?.yearSlidingRevenue)) * 100) || 0
+            // @ts-ignore
+            const yearSlidingPercentMiddleProfit = ((Number(item?.yearSlidingProfit) / Math.floor(state.isMiddleIndicatorsSector[idx]?.yearSlidingProfit)) * 100) || 0
+            // @ts-ignore
+            const activesPercentMiddleProfit = ((Number(item?.actives) / Math.floor(state.isMiddleIndicatorsSector[idx]?.actives)) * 100) || 0
+            // @ts-ignore
+            const equityPercentMiddleProfit = ((Number(item?.equity) / Math.floor(state.isMiddleIndicatorsSector[idx]?.equity)) * 100) || 0
 
-           let lastProfitPercentMiddleProfit = 0
-           if(item.capitalization) {
-             // @ts-ignore
-             lastProfitPercentMiddleProfit = ((item?.capitalization / Math.floor(Number(state.isMiddleIndicatorsSector[idx]?.capitalization))) * 100) || 0
-           }
-           // @ts-ignore
-           state.indicatorsChart.yearSlidingRevenue.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.yearSlidingRevenue) || 0);
-           // @ts-ignore
-           state.indicatorsChart.yearSlidingRevenue.middleSectorIndicatorsPercent.push(yearSlidingRevenuePercentMiddleProfit.toFixed(2))
+            let lastProfitPercentMiddleProfit = 0
+            if(item.capitalization) {
+              // @ts-ignore
+              lastProfitPercentMiddleProfit = ((item?.capitalization / Math.floor(Number(state.isMiddleIndicatorsSector[idx]?.capitalization))) * 100) || 0
+            }
+            // @ts-ignore
+            state.indicatorsChart.yearSlidingRevenue.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.yearSlidingRevenue) || 0);
+            // @ts-ignore
+            state.indicatorsChart.yearSlidingRevenue.middleSectorIndicatorsPercent.push(yearSlidingRevenuePercentMiddleProfit.toFixed(2))
 
-           // @ts-ignore
-           state.indicatorsChart.yearSlidingProfit.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.yearSlidingProfit) || 0);
-           // @ts-ignore
-           state.indicatorsChart.yearSlidingProfit.middleSectorIndicatorsPercent.push(yearSlidingPercentMiddleProfit.toFixed(2))
+            // @ts-ignore
+            state.indicatorsChart.yearSlidingProfit.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.yearSlidingProfit) || 0);
+            // @ts-ignore
+            state.indicatorsChart.yearSlidingProfit.middleSectorIndicatorsPercent.push(yearSlidingPercentMiddleProfit.toFixed(2))
 
-           // @ts-ignore
-           state.indicatorsChart.actives.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.actives) || 0);
-           // @ts-ignore
-           state.indicatorsChart.actives.middleSectorIndicatorsPercent.push(activesPercentMiddleProfit.toFixed(2))
+            // @ts-ignore
+            state.indicatorsChart.actives.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.actives) || 0);
+            // @ts-ignore
+            state.indicatorsChart.actives.middleSectorIndicatorsPercent.push(activesPercentMiddleProfit.toFixed(2))
 
-           // @ts-ignore
-           state.indicatorsChart.equity.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.equity) || 0);
-           // @ts-ignore
-           state.indicatorsChart.equity.middleSectorIndicatorsPercent.push(equityPercentMiddleProfit.toFixed(2))
+            // @ts-ignore
+            state.indicatorsChart.equity.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.equity) || 0);
+            // @ts-ignore
+            state.indicatorsChart.equity.middleSectorIndicatorsPercent.push(equityPercentMiddleProfit.toFixed(2))
 
-           // @ts-ignore
-           state.indicatorsChart.shareOfEquityInAssets.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.shareOfEquityInAssets) || 0);
-           // @ts-ignore
-           state.indicatorsChart.shareOfEquityInAssets.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.shareOfEquityInAssets).toFixed(2) || 0)
+            // @ts-ignore
+            state.indicatorsChart.shareOfEquityInAssets.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.shareOfEquityInAssets) || 0);
+            // @ts-ignore
+            state.indicatorsChart.shareOfEquityInAssets.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.shareOfEquityInAssets).toFixed(2) || 0)
 
-           // @ts-ignore
-           state.indicatorsChart.returnOnEquity.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.returnOnEquity).toFixed(2) || 0);
-           // @ts-ignore
-           state.indicatorsChart.returnOnEquity.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.returnOnEquity).toFixed(2) || 0)
+            // @ts-ignore
+            state.indicatorsChart.returnOnEquity.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.returnOnEquity).toFixed(2) || 0);
+            // @ts-ignore
+            state.indicatorsChart.returnOnEquity.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.returnOnEquity).toFixed(2) || 0)
 
-           // @ts-ignore
-           state.indicatorsChart.capitalization.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.capitalization) || 0);
-           // @ts-ignore
-           state.indicatorsChart.capitalization.middleSectorIndicatorsPercent.push(Number(lastProfitPercentMiddleProfit).toFixed(2))
+            // @ts-ignore
+            state.indicatorsChart.capitalization.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.capitalization) || 0);
+            // @ts-ignore
+            state.indicatorsChart.capitalization.middleSectorIndicatorsPercent.push(Number(lastProfitPercentMiddleProfit).toFixed(2))
 
-           // @ts-ignore
-           state.indicatorsChart.pe.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PE) || 0);
-           // @ts-ignore
-           state.indicatorsChart.pe.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PE).toFixed(2) || 0)
+            // @ts-ignore
+            state.indicatorsChart.pe.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PE) || 0);
+            // @ts-ignore
+            state.indicatorsChart.pe.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PE).toFixed(2) || 0)
 
-           // @ts-ignore
-           state.indicatorsChart.pb.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PB) || 0);
-           // @ts-ignore
-           state.indicatorsChart.pb.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PB).toFixed(2) || 0)
+            // @ts-ignore
+            state.indicatorsChart.pb.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PB) || 0);
+            // @ts-ignore
+            state.indicatorsChart.pb.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PB).toFixed(2) || 0)
 
-           // Темпы прироста активов
-           // @ts-ignore
-           state.indicatorsChart.assetGrowthRate.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.assetGrowthRate) || 0);
-           // @ts-ignore
-           state.indicatorsChart.assetGrowthRate.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.assetGrowthRate).toFixed(2) || 0)
+            // Темпы прироста активов
+            // @ts-ignore
+            state.indicatorsChart.assetGrowthRate.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.assetGrowthRate) || 0);
+            // @ts-ignore
+            state.indicatorsChart.assetGrowthRate.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.assetGrowthRate).toFixed(2) || 0)
 
-           // Темпы прироста прибыли
-           // @ts-ignore
-           state.indicatorsChart.profitGrowRate.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.profitGrowRate) || 0);
-           // @ts-ignore
-           state.indicatorsChart.profitGrowRate.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.profitGrowRate).toFixed(2) || 0)
+            // Темпы прироста прибыли
+            // @ts-ignore
+            state.indicatorsChart.profitGrowRate.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.profitGrowRate) || 0);
+            // @ts-ignore
+            state.indicatorsChart.profitGrowRate.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.profitGrowRate).toFixed(2) || 0)
 
-           // Темпы прироста выручки
-           // @ts-ignore
-           state.indicatorsChart.revenueGrowRate.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.revenueGrowRate) || 0);
-           // @ts-ignore
-           state.indicatorsChart.revenueGrowRate.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.revenueGrowRate).toFixed(2) || 0)
+            // Темпы прироста выручки
+            // @ts-ignore
+            state.indicatorsChart.revenueGrowRate.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.revenueGrowRate) || 0);
+            // @ts-ignore
+            state.indicatorsChart.revenueGrowRate.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.revenueGrowRate).toFixed(2) || 0)
 
 
-           // @ts-ignore
-           state.indicatorsChart.pEquity.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PEquity) || 0);
-           // @ts-ignore
-           state.indicatorsChart.pEquity.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PEquity).toFixed(2) || 0)
+            // @ts-ignore
+            state.indicatorsChart.pEquity.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PEquity) || 0);
+            // @ts-ignore
+            state.indicatorsChart.pEquity.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PEquity).toFixed(2) || 0)
 
-           // @ts-ignore
-           state.indicatorsChart.pSale.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PSale) || 0);
-           // @ts-ignore
-           state.indicatorsChart.pSale.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PSale).toFixed(2) || 0)
-           */
+            // @ts-ignore
+            state.indicatorsChart.pSale.middleSectorIndicators.push(Number(state.isMiddleIndicatorsSector[idx]?.PSale) || 0);
+            // @ts-ignore
+            state.indicatorsChart.pSale.middleSectorIndicatorsPercent.push(Number(state.isMiddleIndicatorsSector[idx]?.PSale).toFixed(2) || 0)
+            */
 
-          state.indicatorsChart.actives.data.push(Number(item?.actives) || 0);
-          state.indicatorsChart.averageProfit.data.push(Number(item?.averageProfit) || 0);
-          state.indicatorsChart.currentAssets.data.push(Number(item?.currentAssets) || 0);
-          state.indicatorsChart.currentRevenue.data.push(Number(item?.currentRevenue) || 0);
-          state.indicatorsChart.equity.data.push(Number(item?.equity) || 0);
-          state.indicatorsChart.lastYearRevenue.data.push(Number(item?.lastYearRevenue) || 0);
-          state.indicatorsChart.profit.data.push(Number(item?.profit) || 0);
-          state.indicatorsChart.quarterlyProfit.data.push(Number(item?.quarterlyProfit) || 0);
-          state.indicatorsChart.quarterlyRevenue.data.push(Number(item?.quarterlyRevenue) || 0);
+            state.indicatorsChart.actives.data.push(Number(item?.actives) || 0);
+            state.indicatorsChart.averageProfit.data.push(Number(item?.averageProfit) || 0);
+            state.indicatorsChart.currentAssets.data.push(Number(item?.currentAssets) || 0);
+            state.indicatorsChart.currentRevenue.data.push(Number(item?.currentRevenue) || 0);
+            state.indicatorsChart.equity.data.push(Number(item?.equity) || 0);
+            state.indicatorsChart.lastYearRevenue.data.push(Number(item?.lastYearRevenue) || 0);
+            state.indicatorsChart.profit.data.push(Number(item?.profit) || 0);
+            state.indicatorsChart.quarterlyProfit.data.push(Number(item?.quarterlyProfit) || 0);
+            state.indicatorsChart.quarterlyRevenue.data.push(Number(item?.quarterlyRevenue) || 0);
 
-          const returnOnEquity = item.returnOnEquity
+            const returnOnEquity = item.returnOnEquity
 
-          if(typeof returnOnEquity == 'number') {
-            const val = returnOnEquity.toFixed(2)
-            state.indicatorsChart.returnOnEquity.data.push(Number(val))
-          } else if(typeof returnOnEquity == 'string') {
-            state.indicatorsChart.returnOnEquity.data.push(0)
-          }
+            if(typeof returnOnEquity == 'number') {
+              const val = returnOnEquity.toFixed(2)
+              state.indicatorsChart.returnOnEquity.data.push(Number(val))
+            } else if(typeof returnOnEquity == 'string') {
+              state.indicatorsChart.returnOnEquity.data.push(0)
+            }
 
-          state.indicatorsChart.shareOfEquityInAssets.data.push(Number(item?.shareOfEquityInAssets) || 0);
+            state.indicatorsChart.shareOfEquityInAssets.data.push(Number(item?.shareOfEquityInAssets) || 0);
 
-          state.indicatorsChart.yearSlidingProfit.data.push(Number(item?.yearSlidingProfit) || 0);
-          state.indicatorsChart.yearSlidingRevenue.data.push(Number(item?.yearSlidingRevenue) || 0);
+            state.indicatorsChart.yearSlidingProfit.data.push(Number(item?.yearSlidingProfit) || 0);
+            state.indicatorsChart.yearSlidingRevenue.data.push(Number(item?.yearSlidingRevenue) || 0);
 
-          state.indicatorsChart.ebitda.data.push(Number(item?.ebitda) || 0);
-          state.indicatorsChart.debtebitda.data.push(Number(item?.DEBTEBITDA) || 0);
-          state.indicatorsChart.evebitda.data.push(Number(item?.EVEBITDA) || 0);
-          state.indicatorsChart.peg.data.push(Number(item?.PEG) || 0);
+            state.indicatorsChart.ebitda.data.push(Number(item?.ebitda) || 0);
+            state.indicatorsChart.debtebitda.data.push(Number(item?.DEBTEBITDA) || 0);
+            state.indicatorsChart.evebitda.data.push(Number(item?.EVEBITDA) || 0);
+            state.indicatorsChart.peg.data.push(Number(item?.PEG) || 0);
 
-          state.indicatorsChart.assetGrowthRate.data.push(Number(item?.assetGrowthRate) || 0);
-          state.indicatorsChart.profitGrowRate.data.push(Number(item?.profitGrowRate) || 0);
-          state.indicatorsChart.revenueGrowRate.data.push(Number(item?.revenueGrowRate) || 0);
+            state.indicatorsChart.assetGrowthRate.data.push(Number(item?.assetGrowthRate) || 0);
+            state.indicatorsChart.profitGrowRate.data.push(Number(item?.profitGrowRate) || 0);
+            state.indicatorsChart.revenueGrowRate.data.push(Number(item?.revenueGrowRate) || 0);
 
-          state.indicatorsChart.capitalization.data.push(Number(item?.capitalization) || 0);
-          state.indicatorsChart.halfyearRevenue.data.push(Number(item?.halfyearRevenue) || 0);
-          state.indicatorsChart.halfyearProfit.data.push(Number(item?.halfyearProfit) || 0);
-          state.indicatorsChart.pe.data.push(Number(item?.PE) || 0);
-          state.indicatorsChart.pb.data.push(Number(item?.PB) || 0);
-          state.indicatorsChart.pEquity.data.push(Number(item?.PEquity) || 0);
-          state.indicatorsChart.pSale.data.push(Number(item?.PSale) || 0);
+            state.indicatorsChart.capitalization.data.push(Number(item?.capitalization) || 0);
+            state.indicatorsChart.halfyearRevenue.data.push(Number(item?.halfyearRevenue) || 0);
+            state.indicatorsChart.halfyearProfit.data.push(Number(item?.halfyearProfit) || 0);
+            state.indicatorsChart.pe.data.push(Number(item?.PE) || 0);
+            state.indicatorsChart.pb.data.push(Number(item?.PB) || 0);
+            state.indicatorsChart.pEquity.data.push(Number(item?.PEquity) || 0);
+            state.indicatorsChart.pSale.data.push(Number(item?.PSale) || 0);
 
 
           count++
@@ -1116,10 +1112,10 @@ export const actions = {
   },
 
   resetIndicatorsChartToDefault({
-      state,
-      dispatch,
-      commit,
-    }: {
+    state,
+    dispatch,
+    commit,
+  }: {
     state: IDocumentState;
     dispatch: any;
     commit: any;

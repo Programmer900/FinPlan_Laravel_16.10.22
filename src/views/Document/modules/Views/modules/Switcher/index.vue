@@ -77,15 +77,40 @@ export default defineComponent({
     }
 
     const init = () => {
-      pages.value = [
-        { name: checkAboutTitle(), link: 'info', component: 'DocumentInfo' },
-        { name: 'О компании', link: 'about-company', component: 'DocumentAboutCompany' },
-        { name: 'Показатели компании', link: 'company-indicators', component: 'DocumentCompanyIndicators' },
-        { name: 'Дивиденды', link: 'dividends', component: 'DocumentDividends' },
-        { name: 'Отчётность', link: 'report', component: 'DocumentReport' },
-        { name: 'Облигации', link: 'bonds', component: 'DocumentBonds' },
-        { name: 'Обсуждение', link: 'discussion', component: 'DocumentDiscussion' },
-      ];
+      const type = String(route.params.type);
+        if (type === routeDocumentTypes.stock) {
+            pages.value = [
+                { name: checkAboutTitle(), link: 'info', component: 'DocumentInfo' },
+                { name: 'О компании', link: 'about-company', component: 'DocumentAboutCompany' },
+                { name: 'Показатели компании', link: 'company-indicators', component: 'DocumentCompanyIndicators' },
+                { name: 'Дивиденды', link: 'dividends', component: 'DocumentDividends' },
+                { name: 'Отчётность', link: 'report', component: 'DocumentReport' },
+                { name: 'Облигации', link: 'bonds', component: 'DocumentBonds' },
+                { name: 'Обсуждение', link: 'discussion', component: 'DocumentDiscussion' },
+            ];
+        }
+        else if (type === routeDocumentTypes.bond) {
+            pages.value = [
+                { name: checkAboutTitle(), link: 'info', component: 'DocumentInfo' },
+                { name: 'О компании', link: 'about-company', component: 'DocumentAboutCompany' },
+                { name: 'Показатели компании', link: 'company-indicators', component: 'DocumentCompanyIndicators' },
+                { name: 'Купоны и амортизация', link: 'coupons', component: 'DocumentCoupons' },
+                { name: 'Отчётность', link: 'report', component: 'DocumentReport' },
+                { name: 'Облигации', link: 'bonds', component: 'DocumentBonds' },
+                { name: 'Обсуждение', link: 'discussion', component: 'DocumentDiscussion' },
+            ];
+        } else {
+            pages.value = [
+                { name: checkAboutTitle(), link: 'info', component: 'DocumentInfo' },
+                { name: 'О компании', link: 'about-company', component: 'DocumentAboutCompany' },
+                { name: 'Показатели компании', link: 'company-indicators', component: 'DocumentCompanyIndicators' },
+                { name: 'Дивиденды', link: 'dividends', component: 'DocumentDividends' },
+                { name: 'Отчётность', link: 'report', component: 'DocumentReport' },
+                { name: 'Облигации', link: 'bonds', component: 'DocumentBonds' },
+                { name: 'Обсуждение', link: 'discussion', component: 'DocumentDiscussion' },
+            ];
+        }
+
     };
 
     onMounted(() => {

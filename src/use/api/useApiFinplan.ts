@@ -1,6 +1,5 @@
 import { AxiosRequestConfig } from 'axios';
 import { useRoute } from 'vue-router';
-import { FINPLAN_API_URL } from '../../../env.common.ts';
 import { DynamicObject } from '@/interfaces';
 
 export enum ApiStatusCode {
@@ -150,6 +149,18 @@ export const useApiFinplan = () => {
       `/api/actives/v1/getFinancialData/${verb}/${code}/${from}/${to}`,
     );
 
+    /**
+     * Получение массива купонов по isin коду облигации
+     * @param verb служит для уточнения страны РФ (для акций, облигаций РФ) или США (пример: RUS/RUS_BOND/USA)
+     * @param code для акций принимает значение тикера актива, для облигаций isin код или secid (пример: AAPL, GAZP, RU000A102VY6)
+     * @param initvalue начальный номинал облигации. Необязательный параметр. В случае его отсутствия в запросе будет выполнен дополнительный запрос для получения начального номинала
+     */
+    const getCoupons = async (verb: string, code: string, initvalue?: string | number ) =>
+        await tryRequest<DynamicObject>(
+            `/api/actives/v1/getCoupons/${verb}/${code}/${initvalue}`,
+        );
+
+
   /**
    * Получение финансовых показателей компании по тикеру / isin-коду актива
    * @param verb служит для уточнения страны РФ (для акций, облигаций РФ) или США (пример: RUS/USA)
@@ -192,6 +203,7 @@ export const useApiFinplan = () => {
   const getCurrentFinancialData = async () => {
     const route = useRoute();
     const { region, ticker } = route.params;
+    console.log(route)
 
     const res = await getFinancialData(String(region), String(ticker));
     const { data } = res;
@@ -446,6 +458,7 @@ export const useApiFinplan = () => {
     getSaveListExt,
     getPublicListGraphData,
     getLastTimestamp,
-    searchActives
+    searchActives,
+    getCoupons
   };
 };

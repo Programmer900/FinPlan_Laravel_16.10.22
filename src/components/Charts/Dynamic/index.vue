@@ -1,4 +1,5 @@
 <template>
+
   <VueHighchart
     v-if="isInit"
     type="chart"

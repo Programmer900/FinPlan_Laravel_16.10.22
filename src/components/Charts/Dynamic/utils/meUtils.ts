@@ -10,6 +10,11 @@ class MeUtils {
         type: 'line',
         backgroundColor: '',
       },
+      colors: [
+        '#910000', '#8bbc21', '#4f00ed', '#0d233a', '#1aadce', '#42220f','#492970', '#f28f43', '#ff5e00',
+        '#77a1e5', '#2b394c', '#a6c96a', '#330331', '#1cb075', '#0d5c3c', '#d8db1f', '#db3b69','#00756a',
+        '#3a11b8', '#ba735f', '#171716', '#000000', '#bd13b4', '#754351', '#016b03', '#ff0000'
+      ],
       title: {
         text: '',
       },
@@ -27,7 +32,7 @@ class MeUtils {
       yAxis: [
         {
           //min: 0,
-          min: (min < 0) ? min : 0,
+          //min: (min < 0) ? min : 0,
           gridLineColor: '#c2c2c2',
           title: {
             text: '',
@@ -43,7 +48,7 @@ class MeUtils {
         {
           opposite: true,
           //min: 0,
-          min:  0,
+          //min:  0,
           gridLineColor: '#c2c2c2',
           title: {
             text: '',

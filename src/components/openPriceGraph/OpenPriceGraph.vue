@@ -535,7 +535,7 @@ export default defineComponent({
     margin-bottom: 10px;
     padding: 8px 10px;
     color: $color-white;
-    font-family: $ff-default;
+    font-family: $ff-montserrat;
     background: #2a8634;
     border: none;
     border-radius: 4px;

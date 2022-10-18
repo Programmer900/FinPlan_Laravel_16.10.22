@@ -92,7 +92,7 @@ export interface IIndicatorsChart {
 }
 export interface IDocumentState {
   data: DynamicObject | null;
-
+  sector: DynamicObject | null;
   financialData: DynamicObject | null;
   reportBalanceData: DynamicObject | null;
   reportProfitLossData: DynamicObject | null;
@@ -666,7 +666,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     name: 'EBITDA',
     data: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#016b03',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -679,7 +679,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     comparisonIndicatorsPercent: [],
     data: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#754351',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -692,7 +692,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     comparisonIndicatorsPercent: [],
     data: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#bd13b4',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -714,7 +714,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     name: 'DEBT/EBITDA',
     data: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#ba735f',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -727,7 +727,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     comparisonIndicators: [],
     comparisonIndicatorsPercent: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#000000',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -776,7 +776,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     name: 'EV/EBITDA',
     data: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#171716',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -785,7 +785,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
     name: 'PEG',
     data: [],
     type: 'column',
-    color: '#44ff9b',
+    color: '#ff0000',
     visible: false,
     hideLabel: true,
     alert: true,
@@ -793,7 +793,7 @@ export const vanilaIndicatorsChartState = (): IIndicatorsChart => ({
 });
 export const vanilaState = (): IDocumentState => ({
   data: null,
-
+  sector: null,
   financialData: null,
   reportBalanceData: null,
   reportProfitLossData: null,

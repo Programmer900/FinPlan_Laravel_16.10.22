@@ -82,10 +82,16 @@ export const routes: RouteRecordRaw[] = [
           import('../views/Document/modules/Views/modules/Pages/Discussion/index.vue'),
       },
       {
+        name: 'DocumentCoupons',
+        path: 'coupons',
+        component: () =>
+          import('../views/Document/modules/Views/modules/Pages/Coupons/index.vue'),
+      },
+      {
         name: 'DocumentDividends',
         path: 'dividends',
         component: () =>
-          import('../views/Document/modules/Views/modules/Pages/Dividends/index.vue'),
+        import('../views/Document/modules/Views/modules/Pages/Dividends/index.vue'),
       },
       {
         name: 'DocumentReport',

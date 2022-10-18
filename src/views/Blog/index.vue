@@ -66,7 +66,7 @@
                 params: { locale: 'ru', id: article.attributes.slug},
               }"
             >
-            <img :src="article.attributes.preview_picture || domain + '' + article.attributes.preview_picture_new.data.attributes.formats.small.url || '/upload/iblock/placeimg_300_165_grayscale_nature.jpg'" :alt="article.attributes.title">
+            <img :src="domain + '' + article.attributes.preview_picture || domain + '' + article.attributes.preview_picture_new.data.attributes.formats.small.url || '/upload/iblock/placeimg_300_165_grayscale_nature.jpg'" :alt="article.attributes.title">
             </router-link>
               <div class="post__text">
                 <p class="post__date">

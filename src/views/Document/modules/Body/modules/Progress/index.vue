@@ -88,7 +88,7 @@
     <DocumentProgressItem
       v-if="getCapitalization"
       color="#2A8634"
-      :line-max="Number(getMinMax['Прошлая капитализация'].MAX)"
+      :line-max="getCapitalization"
       name="Капитализация"
       :symbol="getCurrencyForRegion"
       :value="getCapitalization"
@@ -107,6 +107,8 @@ export default defineComponent({
   components: { DocumentProgressItem },
   setup() {
     const store = useStore();
+
+    console.log(store)
 
     return {
 

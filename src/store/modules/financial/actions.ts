@@ -18,9 +18,18 @@ export const actions = {
 
     if (ticker) {
       const api = useApiFinplan();
-      const response = await api.getFinancialData(region, ticker, from, to);
+      let response;
+
+      if(config.type === 'bond') {
+        response = await api.getFinancialData('RUS_BOND', ticker, from, to)
+      } else {
+        response = await api.getFinancialData(region, ticker, from, to)
+      }
+
+      //console.log('ticker', ticker, response)
+
       if (response.status === ApiStatusCode.success) {
-        commit('setFullData', response.data);
+        commit('setFullData', response.data)
         dispatch('updateState');
       } else {
         console.error('Financial store action error');

@@ -6,7 +6,6 @@
           <DocumentIndicatorsTableAlert />
           <div class="tableProps flexRowBetween">
             <DocumentIndicatorsTableProps @onChangeParam="onChangeParam" />
-            <DocumentIndicatorsTableUtils @changeSwitch="showMiddleProfit" />
           </div>
 
         </div>

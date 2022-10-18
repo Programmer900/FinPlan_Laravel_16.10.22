@@ -5,6 +5,7 @@
   },
   "scripts": {
     "dev": "yarn run clean:generated && vite-ssr --port 4444",
+    "devs": "vite-ssr --port 4444",
     "dev:my": "run-p dev:blog dev",
     "dev:blog": "cd ./blog/my-project & yarn develop",
     "dev:spa": "yarn run clean:generated && vite --port 4444 --host",
